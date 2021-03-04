@@ -1,0 +1,35 @@
+﻿<local:MyCard Title="服务器公告" Margin="0,0,0,15">
+    <StackPanel Margin="25,40,23,15">
+        <Image Height="175" HorizontalAlignment="Left" Source="https://home.xmdream.top:880/images/logo.jpg" />
+        <local:MyHint Text="客户端的登录方式仍然是仅外置登录，注意注意注意啦！" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" Text="配置文件日期：2021-01-25&#xA;由于目前的某些原因，服务器仍然是不定期开放。请留意群内通知！&#xA;目前暂定的开放时间：8：00——21：00&#xA;（我才不会告诉你下面还有东西啦！）" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight" Text="进入官网" EventType="打开网页" EventData="https://home.xmdream.top:880/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" Text="刷新公告区" EventType="刷新主页" ToolTip="如果客户端长时间未启动过，请点击以向服务器拉取配置" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="客户端说明" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,8,0,2" IsWarn="False" Text="DreamCraft Railway Cilent 8.10 Forge&#xA;Build on 2021-01-25&#xA;Made from Powerful PCL 2" />
+        <local:MyHint Text="在客户端出现问题时，请务必确保提交有效的日志文件。&#xA;因擅自修改客户端内容造成的使用错误不予受理。" />
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="由正在奋战 OIer 的 DreamUniverse 提供维护。&#xA;星梦工艺主群： 1064042359&#xA;快速反馈方式： 3212903564@qq.com" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="常见问题解答" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,8,0,2" IsWarn="True" Text="请注意，此处仅提供对客户端内自带扩展组件和模组的解答。&#xA;自制组件或者二创所造成的兼容性问题不在解答范围之内，请勿要求。" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False" Text="1、提示：无法解析主机名" />
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="请切换自己的 DNS 服务器至 114.114.114.114 、 4.4.4.4 、 8.8.8.8 等。" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False" Text="2、能否加装其他辅助的模组？" />
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="理论上可以添加，但是请注意模组对客户端和服务器的兼容性。&#xA;客户端已经内置字体美化模组。" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False" Text="3、服务器内图片不清晰怎么办？" />
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="请在 Mod 设置 -> SignPicture -> Config -> image 中将 HeightLimit 和 WidthLimit 参数调整至 10240 确认并重新启动客户端。&#xA;若无效请刷新图片缓存。" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="全服指令表" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Margin="0,8,0,2" IsWarn="False" Text="1、 /zm" />
+        <TextBlock TextWrapping="Wrap" Margin="0,6,0,0" Text="此指令用于在服内播放音频。&#xA;/zm search 163 所选歌曲 搜索所选歌曲并播放。&#xA;/zm stop 停止歌曲播放。" />
+    </StackPanel>
+</local:MyCard>
