@@ -19,6 +19,13 @@
 		j.src = "https://www.v5kf.com/184750/2d1ae030172da/v5kf.js";
 		b.parentNode.insertBefore(j, b);
 	})(window, document, "script", "V5CHAT");
+	V5CHAT('withoutBtn');       // 不显示浮动对话按钮
+        V5CHAT('onPluginLoad', function() {
+            // 插件加载完成的回调
+            setTimeout(function() {
+                V5CHAT('showBtn');  // 2s后显示浮动对话按钮
+            }, 2000);
+        });
 </script>	
 	</head>
 	<body>
