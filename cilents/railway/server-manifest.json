@@ -1,42 +1,10 @@
 {
   "name": "1.18.1",
   "author": "DreamUniverse",
-  "version": "0.1.1",
-  "description": "祝各位新春快乐~本次更新为重点更新，主要内容如下：\n[+]Minecraft-Transit-Railway \nbeta-8 \u003d\u003e beta-9-unofficial-2\n以下为更新日志：\nNew Features\n- Emerald rail (60km/h) and Quartz rail (200km/h) by @TS3089 (BDark000). Thank you for your contribution!\n- Disneyland Resort Line train by @Eric and the SP1900 train, well done!\n- Building tools:\n     - Tunnel Creator item: Use on an existing rail to build\n     - Bridge creator and Tunnel Wall Creator items: Shift+Right Click on a block to select the building material, then use on an existing rail to build\n     - Only one build can occur simultaneously; go to any Dashboard and click the Operations button to see queued tasks\n- Added boats! Use the Boat Nodes to create shipping lanes, and use the Boat Dashboard to configure routes and depots. Boats and trains share the same stations but not routes, platforms, sidings, and depots. Boat Nodes cannot be connected to Rail Nodes.\n\nFixes\n- PSD/APG without a platform will not render weird bits any more\n- Station names with blank lines will no longer cause the route map to be blank\n- Fixed player glitching out of trains when going too fast on servers\n\nKnown Issues\n- Optifine does not work with the Forge 1.17 and 1.18 versions of the mod.\n- If using Forge, use http://localhost:8888/index.html or http://\u003cserver ip\u003e:8888/index.html to access the online system map.\n- Boat sidings must be 3 blocks long (including start and end blocks), or else it will not work properly.\n\n希望您玩得开心！\n",
+  "version": "1.0.1",
+  "description": "祝各位新春快乐~\n\u003cbr /\u003e\nMinecraft-Transit-Railway 从 beta-8 升级至 beta-9-unofficial-2.",
   "fileApi": "https://www.dreamcraft.com.cn/cilents/railway",
   "files": [
-    {
-      "path": "config/chiselsandbits-client.json",
-      "hash": "78f50a41eac7e937b6f27c5153ff286e1ca259be"
-    },
-    {
-      "path": "config/chiselsandbits-common.json",
-      "hash": "4dd92501f7501b6e972feef605ee74b14e2a2fcb"
-    },
-    {
-      "path": "config/chiselsandbits-server.json",
-      "hash": "5122f41e04ed1abf6f1339cc1b25f610add1d2f9"
-    },
-    {
-      "path": "config/fabric/indigo-renderer.properties",
-      "hash": "f6acad7d3845f62ddd148018c9e638c0ae61fdd4"
-    },
-    {
-      "path": "config/mtr.json",
-      "hash": "5cfa53481306fad56e3a34ac1e2fec3ad74efda8"
-    },
-    {
-      "path": "config/xaerominimap.txt",
-      "hash": "8e5fa0e7e733e1be44871cb69182bb5acce67e7a"
-    },
-    {
-      "path": "config/xaerominimap_entities.json",
-      "hash": "7540a0aa2cbc205aa0cc05b0b731274a2af3b67c"
-    },
-    {
-      "path": "config/xaeropatreon.txt",
-      "hash": "ea102322bdf5be36acef1ed783e85b6a0d1ee418"
-    },
     {
       "path": "mods/ChiselsBits-fabric-1.18.1-1.2.77.jar",
       "hash": "abbccbc4f36d89782754ee7f69fb4c490058d9f4"
@@ -58,24 +26,12 @@
       "hash": "6f82fb0943421681023c5b3d3afdd87ebb4a2034"
     },
     {
-      "path": "ModTranslations/mtr.timestamp",
-      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
-    },
-    {
-      "path": "options.txt",
-      "hash": "23036e4f9c69fe28a4d99b23bae55323d12b9765"
-    },
-    {
       "path": "servers.dat",
       "hash": "7bfef77ff49f4752b23705e7d71b3b13a73aed8f"
     },
     {
       "path": "servers.dat_old",
       "hash": "6b5d9497e7992333ddef5c2784f8522cfb640fe8"
-    },
-    {
-      "path": "XaeroWaypoints/Multiplayer_railway.dreamcraft.com.cn/config.txt",
-      "hash": "da6720faf832c144e34c09cb569a4f0dcdf52bc6"
     }
   ],
   "addons": [
