@@ -1,0 +1,503 @@
+//Only for XPlus 2.0 Modpack.
+//Script by Wudji
+
+client = getMinecraftClient();
+player = client.getPlayer();
+
+fun tfs(string) {return client.textFromString(string);}
+fun stb(string){if (string == "true" || string.toList().getIndex(0) == "t"){return true;}else if(string == "false"){return false;}}
+// 读文件 true/false 信息的临时解决方案
+
+scriptPath = client.getScriptsPath();
+autofish = stb(readFile(client.getScriptsPath() + "/autofish.txt"));
+autofishEventId = -1;
+preventBreak = stb(readFile(client.getScriptsPath() + "/PreventBreak.txt"));
+
+configScreen = client.createFakeScreen("XPlus 2.0 整合包 配置菜单", 5);
+helpScreen = client.createFakeScreen("XPlus 2.0 整合包 帮助菜单", 6);
+
+atmScreen = client.createFakeScreen("自动图腾设置", 1);
+afhScreen = client.createFakeScreen("自动钓鱼设置", 1);
+comScreen = client.createFakeScreen("指令建议器忽略空格", 1);
+musicScreen = client.createFakeScreen("背景音乐设置", 3);
+cmdMusicScreen = client.createFakeScreen("背景音乐设置", 3);
+lavaScreen = client.createFakeScreen("岩浆源高亮设置", 1);
+chatScreen = client.createFakeScreen("聊天栏保留设置", 1);
+bobScreen = client.createFakeScreen("禁用受伤视角摇晃", 1);
+noticeScreen = client.createFakeScreen("禁用新手提示和配方解锁提示", 1);
+
+
+client.addCommand("xplus", [["help", "config", "about"]]);
+client.addCommand("wiki", [[]]);
+client.addCommand("mcbbs", [[]]);
+client.addCommand("bgmusic", [[]]);
+
+configTrue = client.itemFromString("lime_wool").setCustomName(tfs("该功能目前为§2开"));
+configFalse = client.itemFromString("red_wool").setCustomName(tfs("该功能目前为§4关"));
+goBack = client.itemFromString("red_stained_glass_pane").setCustomName(tfs("返回到上一页"));
+//blank = client.itemFromString("white_stained_glass_pane").setCustomName(tfs(""));
+
+fun updateStatus(screen, slot, item, config, setName){
+    screen.setStackForSlot(slot, client.itemFromString(item).setCustomName(setName).setItemLore([tfs("该功能目前值为："+ client.getEssentialClientValue(config))]));
+}
+
+fun updateStatusBuildin(screen, slot, item, config, setName){
+    screen.setStackForSlot(slot, client.itemFromString(item).setCustomName(setName).setItemLore([tfs("该功能目前值为："+ config.toString())]));
+}
+
+fun setValue(screen, slot, status){
+    if(status == true || status == "true"){
+        screen.setStackForSlot(slot, configTrue);
+    }else if(status == false || status == "false"){
+        screen.setStackForSlot(slot, configFalse);
+    }
+}
+
+fun isMeetReq(name, req){
+    if (client.getEssentialClientValue(name) == req){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+fun startchoice(screen, slot, name, req){
+    if (isMeetReq(name, req)){
+        screen.setStackForSlot(slot, configTrue);
+    }else{
+        screen.setStackForSlot(slot, configFalse);
+    }
+}
+
+//autofish
+fun getFish(bobber) {
+    if (preventBreak && player.getHeldItem().getDurability() >= 5)
+    {
+        player.use("once");
+        player.messageActionBar("§a成功收杆");
+        sleep(1000);
+        player.use("once");
+    }else{
+        player.messageActionBar("§4吊杆耐久过低，已阻止收杆");
+    }
+}
+//=============helpInfo=============================
+//syntax：[slot(int), item(string), name(string), lore(string)]
+helpInfo = [
+    [10,"compass","小地图如何显示生物图标?","按Tab键即可，您可以在小地图设置中将显示生物图标改为常亮"],
+    [12,"painting","左上角信息显示太小，难以看清?","在mod配置页面打开minihud的配置,调整其中 通用 - 字体大小 的设置选项即可"],
+    [14,"redstone_block","为什么有的光影无法加载?","您当前使用的XPlus版本为Iris版，优化比高清修复版本好，但不兼容少部分光影"],
+    [16,"villager_spawn_egg","为什么带生物模型的材质包无法正常显示?","您可以将mods文件夹下的可选mod[功能][Optifine格式实体模型支持]mod启用§4注意：部分生物的模型可能显示依旧有误"],
+    [28,"stick","投影是什么，怎么用?","投影能方便玩家于生存模式建造结构，点击图标即可查看投影教程(by XeKr)"],//open https://www.bilibili.com/video/av77208855
+    [30,"observer","传说中的tweakeroo是什么?","tweakeroo提供了一系列优化原版游戏体验的功能(自动补货，Freecamera，自动攻击(刷怪塔挂机用))和禁用类功能(禁用粒子提高帧率，禁用迷雾等)，点击查看基础教程"],//open https://www.bilibili.com/video/av413115836
+    [32,"white_carpet","Carpet(地毯)是什么?","点击查看介绍"],//open https://www.bilibili.com/video/av70188771
+    [34,"ender_chest","为啥游戏进程会吃这么多内存?","1.18属于典型的干啥啥不行吃内存没够，如无特殊要求(光影/大型材质包)，在启动器内分配2~3GB即可"],
+    [47,"ender_eye","发现整合包bug?","点此打开Github issue"],
+    [49,"chest","XPlus 2.0整合包发布贴","点此打开mcbbs发布贴，获取更多帮助和其他版本整合包"],//open mcbbs
+    [51,"egg","相关信息","XPlus 2.0 for Minecraft 1.18.1 - Fabric -作者：Wudji"]
+
+];
+
+//=============dynamicUpdateScreen======================
+
+
+fun updateConfigScreen(){
+    updateStatus(configScreen, 10, "totem_of_undying", "switchToTotem", "自动图腾设置");
+    updateStatusBuildin(configScreen, 12, "salmon", autofish, "自动钓鱼设置");
+    updateStatus(configScreen, 14, "command_block", "commandSuggestorIgnoresSpaces", "指令建议器忽略空格设置");
+    updateStatus(configScreen, 28, "lava_bucket", "highlightLavaSources", "岩浆源头高亮设置");
+    updateStatus(configScreen, 30, "name_tag", "permanentChatHud", "聊天栏信息保留");
+    updateStatus(configScreen, 32, "diamond_sword", "disableBobViewWhenHurt", "禁用受伤视角摇晃");
+    updateStatus(configScreen, 34, "crafting_table", "disableRecipeNotifications", "禁用新手提示和配方解锁提示");
+
+    startchoice(atmScreen, 1, "switchToTotem", "5");
+    setValue(comScreen, 1, client.getEssentialClientValue("commandSuggestorIgnoresSpaces"));
+    setValue(lavaScreen, 1, client.getEssentialClientValue("highlightLavaSources"));
+    setValue(chatScreen, 1, client.getEssentialClientValue("permanentChatHud"));
+    setValue(bobScreen, 1, client.getEssentialClientValue("disableBobViewWhenHurt"));
+    setValue(noticeScreen, 1, client.getEssentialClientValue("disableRecipeNotifications"));
+
+    setValue(afhScreen, 1, autofish);
+
+    atmScreen.setStackForSlot(8, goBack);
+    afhScreen.setStackForSlot(8, goBack);
+    comScreen.setStackForSlot(8, goBack);
+    lavaScreen.setStackForSlot(8, goBack);
+    chatScreen.setStackForSlot(8, goBack);
+    bobScreen.setStackForSlot(8, goBack);
+    noticeScreen.setStackForSlot(8, goBack);
+
+    updateStatusBuildin(afhScreen, 5, "shield", preventBreak, "吊杆自动保护(低耐久自动停止抛竿)");
+}
+
+//=============oneTimeUpdateScreen======================
+    //musicScreen
+    configScreen.setStackForSlot(16, client.itemFromString("music_disc_far").setCustomName(tfs("切换背景音乐界面")));
+    musicScreen.setStackForSlot(4, client.itemFromString("chain_command_block").setCustomName(tfs("你可以通过 /bgmusic 快速打开该页面")));
+    musicScreen.setStackForSlot(9, client.itemFromString("grass_block").setCustomName(tfs("点击切换一首主世界的背景音乐")));
+    musicScreen.setStackForSlot(11, client.itemFromString("red_nether_bricks").setCustomName(tfs("点击切换一首下界的背景音乐")));
+    musicScreen.setStackForSlot(13, client.itemFromString("end_stone_bricks").setCustomName(tfs("点击切换一首末地的背景音乐")));
+    musicScreen.setStackForSlot(15, client.itemFromString("clock").setCustomName(tfs("点击切换一首主菜单的背景音乐")));
+    musicScreen.setStackForSlot(17, client.itemFromString("command_block").setCustomName(tfs("点击切换一首创造模式的背景音乐")));
+    musicScreen.setStackForSlot(26, goBack);
+    
+    lavaScreen.setStackForSlot(2, client.itemFromString("command_block").setCustomName(tfs("该功能存在bug，暂不支持切换配置。如有需要，可以在Essential Client的配置菜单中设置")));
+    //helpScreen.setStackForSlot(13, client.itemFromString("command_block").setCustomName(tfs("帮助文档正在编写中......")));
+
+    cmdMusicScreen.setStackForSlot(9, client.itemFromString("grass_block").setCustomName(tfs("点击切换一首主世界的背景音乐")));
+    cmdMusicScreen.setStackForSlot(11, client.itemFromString("red_nether_bricks").setCustomName(tfs("点击切换一首下界的背景音乐")));
+    cmdMusicScreen.setStackForSlot(13, client.itemFromString("end_stone_bricks").setCustomName(tfs("点击切换一首末地的背景音乐")));
+    cmdMusicScreen.setStackForSlot(15, client.itemFromString("clock").setCustomName(tfs("点击切换一首主菜单的背景音乐")));
+    cmdMusicScreen.setStackForSlot(17, client.itemFromString("command_block").setCustomName(tfs("点击切换一首创造模式的背景音乐")));
+    cmdMusicScreen.setStackForSlot(4, client.itemFromString("chain_command_block").setCustomName(tfs("你可以通过 /bgmusic 命令快速打开该页面")));
+//=============helpScreenStartUp======================
+    foreach (array : helpInfo) { 
+    //syntax：[slot, item, name, lore]
+    helpScreen.setStackForSlot(array.getIndex(0), client.itemFromString(array.getIndex(1)).setCustomName(array.getIndex(2)).setItemLore([tfs(array.getIndex(3))]));
+}
+//=============mainProcess======================
+
+player.message("§9[提示]");
+player.message("使用§6/xplus config§r指令来设置整合包的部分功能");
+player.message("使用§6/xplus help§r指令获取整合包帮助");
+player.message("使用§6/xplus about§r指令获取整合包相关信息");
+player.message("使用§6/wiki 搜索内容§r 或 §6/mcbbs 搜索内容§r指令在Minecraft Wiki或mcbbs中快速搜索");
+
+client.addGameEvent("onCommand", fun(command, args) {
+    switch (command) {
+        case "xplus" -> {
+            if (args.isEmpty()) {
+                player.message("§4参数不能为空！");
+                return;
+            }
+            arg1 = args.get(0);
+            switch (arg1) {
+                case "help" -> {
+                    player.openScreen(helpScreen);
+                }
+                case "config" -> {
+                    player.openScreen(configScreen);
+                    updateConfigScreen();
+                }
+                case "about" -> {
+                    player.message(client.textFromString("XPlus 2.0 for Minecraft 1.18.1 - fabric - 作者:Wudji\n ").format("gold"));
+                    player.message(client.textFromString("点此查看XPlus整合包发布贴(mcbbs)\n ").format("blue").withClickEvent("open_url", "https://www.mcbbs.net/thread-936198-1-1.html"));
+                    player.message(client.textFromString("使用本整合包即代表你已同意 用户协议与免责声明[点此查看]\n ").format("red").withClickEvent("open_url", "https://gitee.com/wudji/xplus-2.0-modpack-custom-homepage/blob/master/%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE%E4%B8%8E%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E.md"));
+                }
+            }
+        }
+        case "wiki" -> {
+            if (args.isEmpty()) {
+                player.message("§4参数不能为空！");
+                return;
+            }
+            arg1 = args.get(0);
+            wikiLinkTemp = "https://searchwiki.biligame.com/mc/index.php?search=" + arg1;
+            player.message(client.textFromString("点此查看 " + arg1 + " 在Minecraft Wiki(Bilibili镜像)中的搜索结果").format("gold").withClickEvent("open_url", wikiLinkTemp));
+            rawTemp = arg1 + "在mc wiki中的搜索结果：" + wikiLinkTemp;
+            player.message(client.textFromString("[点此分享到聊天栏]").format("blue").withClickEvent("run_command", rawTemp));
+        }
+        case "mcbbs" -> {
+            if (args.isEmpty()) {
+                player.message("§4参数不能为空！");
+                return;
+            }
+            arg1 = args.get(0);
+            mcbbsLinkTemp = "https://www.mcbbs.net/search.php?mod=forum&searchsubmit=yes&wd=" + arg1;
+            player.message(client.textFromString("点此查看 " + arg1 + " 在mcbbs中的搜索结果").format("gold").withClickEvent("open_url", mcbbsLinkTemp));
+            rawTemp2 = arg1 + "在mcbbs中的搜索结果：" + mcbbsLinkTemp;
+            player.message(client.textFromString("[点此分享到聊天栏]").format("blue").withClickEvent("run_command", rawTemp2));
+        }
+        case "bgmusic" -> {
+            player.openScreen(cmdMusicScreen);
+        }
+
+    }
+});
+
+//check if autofish is true on join world
+if (autofish == true){
+    autofishEventId = client.addGameEvent("onFishBite", getFish);
+}
+
+//=============events======================
+
+helpScreen.onClick(fun(item, slot, action) {
+    switch (slot){
+        case 28 ->{
+            player.message(client.textFromString("[点此查看投影教程]").format("blue").withClickEvent("open_url", "https://www.bilibili.com/video/av77208855"));
+            player.closeScreen();
+        }
+        case 30 ->{
+            player.message(client.textFromString("[点此查看tweakeroo教程]").format("blue").withClickEvent("open_url", "https://www.bilibili.com/video/av413115836"));
+            player.closeScreen();
+        }
+        case 32 ->{
+            player.message(client.textFromString("[点此查看Carpet教程]").format("blue").withClickEvent("open_url", "https://www.bilibili.com/video/av70188771"));
+            player.closeScreen();
+        }
+        case 47 ->{
+            player.message(client.textFromString("[点此查看Github issue页面]").format("blue").withClickEvent("open_url", "https://github.com/Wudji/XPlus-2.0-Modpack"));
+            player.closeScreen();
+        }
+        case 49 ->{
+            player.message(client.textFromString("[点此查看mcbbs发布贴]").format("blue").withClickEvent("open_url", "https://www.mcbbs.net/thread-936198-1-1.html"));
+            player.closeScreen();
+        }
+    }
+   
+});
+
+configScreen.onClick(fun(item, slot, action) {
+    switch (slot){
+        case 10 ->{
+            player.openScreen(atmScreen);
+        }
+        case 12 ->{
+            player.openScreen(afhScreen);
+        }
+        case 14 ->{
+            player.openScreen(comScreen);
+        }
+        case 16 ->{
+            player.openScreen(musicScreen);
+        }
+        case 28 ->{
+            player.openScreen(lavaScreen);
+        }
+        case 30 ->{
+            player.openScreen(chatScreen);
+        }
+        case 32 ->{
+            player.openScreen(bobScreen);
+        }
+        case 34 ->{
+            player.openScreen(noticeScreen);
+        }
+    }
+   
+});
+
+//autototemConfigScreen
+atmScreen.onClick(fun(item, slot, action) {
+    switch (slot){
+        case 1 ->{
+            if (isMeetReq("switchToTotem", "5")){
+                client.setEssentialClientRule("switchToTotem", -1);
+                setValue(atmScreen, 1, false);
+            }else{
+                client.setEssentialClientRule("switchToTotem", 5);
+                setValue(atmScreen, 1, true);
+            }
+        }
+        case 8 ->{
+            //quit
+            player.openScreen(configScreen);
+            updateConfigScreen();
+        }
+    }
+   
+});
+
+//autofishConfigScreen
+afhScreen.onClick(fun(item, slot, action) {
+    switch (slot){
+        case 1 ->{
+            if (autofish == true){
+                autofish = false;
+                writeFile(client.getScriptsPath() + "/autofish.txt", "false");
+                setValue(afhScreen, 1, false);
+                client.removeGameEvent("onFishBite", autofishEventId);
+            }else{
+                autofish = true;
+                writeFile(client.getScriptsPath() + "/autofish.txt", "true");
+                setValue(afhScreen, 1, true);
+                autofishEventId = client.addGameEvent("onFishBite", getFish);
+            }
+        }
+        case 5 ->{
+            if (preventBreak == true){
+                preventBreak = false;
+                writeFile(client.getScriptsPath() + "/PreventBreak.txt", "false");
+                updateConfigScreen();
+            }else{
+                preventBreak = true;
+                writeFile(client.getScriptsPath() + "/PreventBreak.txt", "true");
+                updateConfigScreen();
+            }
+        }
+        case 8 ->{
+            //quit
+            player.openScreen(configScreen);
+            updateConfigScreen();
+        }
+    }
+   
+});
+
+comScreen.onClick(fun(item, slot, action) {
+    switch (slot){
+        case 1 ->{
+            if (client.getEssentialClientValue("commandSuggestorIgnoresSpaces") == true ||client.getEssentialClientValue("commandSuggestorIgnoresSpaces") == "true"){
+                client.setEssentialClientRule("commandSuggestorIgnoresSpaces", false);
+                setValue(comScreen, 1, false);
+            }else{
+                client.setEssentialClientRule("commandSuggestorIgnoresSpaces", true);
+                setValue(comScreen, 1, true);
+            }
+        }
+        case 8 ->{
+            //quit
+            player.openScreen(configScreen);
+            updateConfigScreen();
+        }
+    }
+   
+});
+
+musicScreen.onClick(fun(item, slot, action) {
+    switch (slot){
+        case 9 ->{
+            player.say("/music play overworld");
+            player.messageActionBar("现在正在播放主世界背景音乐");
+        }
+        case 11 ->{
+            player.say("/music play nether");
+            player.messageActionBar("现在正在播放下界背景音乐");
+        }
+        case 13 ->{
+            player.say("/music play end");
+            player.messageActionBar("现在正在播放末地背景音乐");
+        }
+        case 15 ->{
+            player.say("/music play menu");
+            player.messageActionBar("现在正在播放主菜单背景音乐");
+        }
+        case 17 ->{
+            player.say("/music play creative");
+            player.messageActionBar("现在正在播放创造模式背景音乐");
+        }
+        case 26 ->{
+            //quit
+            player.openScreen(configScreen);
+        }
+    }
+   
+});
+
+cmdMusicScreen.onClick(fun(item, slot, action) {
+    switch (slot){
+        case 9 ->{
+            player.say("/music play overworld");
+            player.messageActionBar("现在正在播放主世界背景音乐");
+        }
+        case 11 ->{
+            player.say("/music play nether");
+            player.messageActionBar("现在正在播放下界背景音乐");
+        }
+        case 13 ->{
+            player.say("/music play end");
+            player.messageActionBar("现在正在播放末地背景音乐");
+        }
+        case 15 ->{
+            player.say("/music play menu");
+            player.messageActionBar("现在正在播放主菜单背景音乐");
+        }
+        case 17 ->{
+            player.say("/music play creative");
+            player.messageActionBar("现在正在播放创造模式背景音乐");
+        }
+        case 26 ->{
+            //quit
+            player.openScreen(configScreen);
+        }
+    }
+   
+});
+
+lavaScreen.onClick(fun(item, slot, action) {
+    switch (slot){
+        //目前该功能有bug，暂不提供切换功能
+        /*case 1 ->{
+            if (client.getEssentialClientValue("highlightLavaSources") == true ||client.getEssentialClientValue("highlightLavaSources") == "true"){
+                client.setEssentialClientRule("highlightLavaSources", "false");
+                //setValue(lavaScreen, 1, false);
+            }else{
+                client.setEssentialClientRule("highlightLavaSources", "true");
+                //setValue(lavaScreen, 1, true);
+            }
+        }*/
+        case 8 ->{
+            //quit
+            player.openScreen(configScreen);
+            updateConfigScreen();
+        }
+    }
+   
+});
+
+chatScreen.onClick(fun(item, slot, action) {
+    switch (slot){
+        case 1 ->{
+            if (client.getEssentialClientValue("permanentChatHud") == true ||client.getEssentialClientValue("permanentChatHud") == "true"){
+                client.setEssentialClientRule("permanentChatHud", false);
+                setValue(chatScreen, 1, false);
+            }else{
+                client.setEssentialClientRule("permanentChatHud", true);
+                setValue(chatScreen, 1, true);
+            }
+        }
+        case 8 ->{
+            //quit
+            player.openScreen(configScreen);
+            updateConfigScreen();
+        }
+    }
+   
+});
+
+
+bobScreen.onClick(fun(item, slot, action) {
+    switch (slot){
+        case 1 ->{
+            if (client.getEssentialClientValue("disableBobViewWhenHurt") == true ||client.getEssentialClientValue("disableBobViewWhenHurt") == "true"){
+                client.setEssentialClientRule("disableBobViewWhenHurt", false);
+                setValue(bobScreen, 1, false);
+            }else{
+                client.setEssentialClientRule("disableBobViewWhenHurt", true);
+                setValue(bobScreen, 1, true);
+            }
+        }
+        case 8 ->{
+            //quit
+            player.openScreen(configScreen);
+            updateConfigScreen();
+        }
+    }
+   
+});
+
+noticeScreen.onClick(fun(item, slot, action) {
+    switch (slot){
+        case 1 ->{
+            if (client.getEssentialClientValue("disableRecipeNotifications") == true ||client.getEssentialClientValue("disableRecipeNotifications") == "true"){
+                client.setEssentialClientRule("disableRecipeNotifications", false);
+                client.setEssentialClientRule("disableTutorialNotifications", false);
+                setValue(noticeScreen, 1, false);
+            }else{
+                client.setEssentialClientRule("disableRecipeNotifications", true);
+                client.setEssentialClientRule("disableTutorialNotifications", true);
+                setValue(noticeScreen, 1, true);
+            }
+        }
+        case 8 ->{
+            //quit
+            player.openScreen(configScreen);
+            updateConfigScreen();
+        }
+    }
+   
+});
+
+
+hold();

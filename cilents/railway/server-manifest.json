@@ -1,10 +1,982 @@
 {
   "name": "1.18.1",
-  "author": "DreamUniverse",
-  "version": "1.0.1",
-  "description": "祝各位新春快乐~\n\u003cbr /\u003e\nMinecraft-Transit-Railway 从 beta-8 升级至 beta-9-unofficial-2.",
+  "author": "Qxiao_yuanQ",
+  "version": "1.1.0",
+  "description": "",
   "fileApi": "https://www.dreamcraft.com.cn/cilents/railway",
   "files": [
+    {
+      "path": "authlib-injector.jar",
+      "hash": "5e8cda9cb85e3227f60829db1e595d186543ae40"
+    },
+    {
+      "path": "changelog.txt",
+      "hash": "988edd076e4b13e60973fb9bb13e00f39cf7d15e"
+    },
+    {
+      "path": "config/advancementinfo.json5",
+      "hash": "1bbc4d83d98beefbc7ffb1094e751f45fe483819"
+    },
+    {
+      "path": "config/animatica.properties",
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
+      "path": "config/appleskin.json5",
+      "hash": "4994b8afdf50b6412aa302a70c31a9f04bfb73fa"
+    },
+    {
+      "path": "config/armorchroma.json",
+      "hash": "b63bb4eb92dad5cbc9464aeee8519557c0d6177f"
+    },
+    {
+      "path": "config/authme.json5",
+      "hash": "bcce6b853162aa5948301c0706f91952d84a9804"
+    },
+    {
+      "path": "config/autofish.config",
+      "hash": "ed06863dafa14a6b3f630d2978e82007a6d9a5f0"
+    },
+    {
+      "path": "config/auto_third_person.cfg",
+      "hash": "a69354202434e64ae939cab926c23ba08110abf3"
+    },
+    {
+      "path": "config/betterpingdisplay.json",
+      "hash": "51a7efebd32597a49b4c6f151b36845182ab339a"
+    },
+    {
+      "path": "config/boatiview/client.toml",
+      "hash": "c185dacbc9b54a55e495a2bb98a2276226bc9ab2"
+    },
+    {
+      "path": "config/bobby.conf",
+      "hash": "a4ef44ac917cee1983da016536447a2546e6723a"
+    },
+    {
+      "path": "config/capes.json5",
+      "hash": "5105c6df0412dc508f50a4636a92fcaa29fdc4cb"
+    },
+    {
+      "path": "config/carpet/default_carpet.conf",
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
+      "path": "config/cem.conf",
+      "hash": "57a54aa90c211c7e83b459f576e6af0d2543908f"
+    },
+    {
+      "path": "config/chat_heads.json5",
+      "hash": "9135f2ba3d2f0821e16b998db7b4591682e9df93"
+    },
+    {
+      "path": "config/chiselsandbits-client.json",
+      "hash": "d4b1cc0d1445009c3c9c6bb5232a277b11fccbca"
+    },
+    {
+      "path": "config/chiselsandbits-common.json",
+      "hash": "adc4bcd6f2cb4f93069722b22abf49f6585bf1cc"
+    },
+    {
+      "path": "config/chiselsandbits-server.json",
+      "hash": "5122f41e04ed1abf6f1339cc1b25f610add1d2f9"
+    },
+    {
+      "path": "config/colormatic.properties",
+      "hash": "f8f829c5bce289640ff7a10f2754a0fbe758e0a4"
+    },
+    {
+      "path": "config/continuity.json",
+      "hash": "a273e48bc18aff0a6ec4c14046faa0f718df70bc"
+    },
+    {
+      "path": "config/crowdin.txt",
+      "hash": "f31ebd67175d181274cdb9457c4017ce098ffcf3"
+    },
+    {
+      "path": "config/customwindowtitle-client.toml",
+      "hash": "3ac73433850c541efc74937de54a6c7356a5dc29"
+    },
+    {
+      "path": "config/durabilityviewer.json",
+      "hash": "3860fa9f3dbeb046ac5158e592cd50eb2c09ed77"
+    },
+    {
+      "path": "config/dynamicfps.toml",
+      "hash": "9596bbc180a0d8689ade99e8b23043034b5e3b72"
+    },
+    {
+      "path": "config/easiervillagertrading.json",
+      "hash": "b3d6c5b660d21182fff1f75dd3545e9d59d24b0f"
+    },
+    {
+      "path": "config/enhanced_attack_indicator.json",
+      "hash": "359188bbc8ceec03ba6ab021578cb729d1d23086"
+    },
+    {
+      "path": "config/enhanced_bes.properties",
+      "hash": "e3843b6dc7241b48b020de3ec5c94a231c776f5a"
+    },
+    {
+      "path": "config/entityculling.json",
+      "hash": "b6eebd5c52b3e223562c936451623a5b46d4ddf4"
+    },
+    {
+      "path": "config/EssentialClient/EssentialClientRules.json",
+      "hash": "f1e18f8a3077ba15520dcf127db707df8e5903a8"
+    },
+    {
+      "path": "config/EssentialClient/Scripts/autofish.txt",
+      "hash": "44cac6e38a6fc196e5ea967873d9250a258e80b7"
+    },
+    {
+      "path": "config/EssentialClient/Scripts/clientscript.arucas",
+      "hash": "268692ce6550b885369cac7a70aad6b072d6864c"
+    },
+    {
+      "path": "config/EssentialClient/Scripts/PreventBreak.txt",
+      "hash": "5ffe533b830f08a0326348a9160afafc8ada44db"
+    },
+    {
+      "path": "config/EssentialClient/Scripts/rules/autofish.txt",
+      "hash": "7cb6efb98ba5972a9b5090dc2e517fe14d12cb04"
+    },
+    {
+      "path": "config/fabric/indigo-renderer.properties",
+      "hash": "7ac2c391506b613f28796992233ebb60bc8a794d"
+    },
+    {
+      "path": "config/ferritecore.mixin.properties",
+      "hash": "0ccfd2e99848d01850e9cc5a6e68f73d4800ca98"
+    },
+    {
+      "path": "config/firstperson.json",
+      "hash": "3fdafec28c2e5a08bba57904ecdddca1b9d96cfa"
+    },
+    {
+      "path": "config/flytre_lib.json5",
+      "hash": "e61e3802a63c77f0b8cbd210bb54ee04e6175ebd"
+    },
+    {
+      "path": "config/fpsdisplay.json",
+      "hash": "5d12dd1e1371bfb4d70cfc98d2df4226b858f088"
+    },
+    {
+      "path": "config/held-item-info.json",
+      "hash": "98547012b3c95db7f968e8d1b4f38310ba51c9c4"
+    },
+    {
+      "path": "config/ias.json",
+      "hash": "be878383c7b8c508c7cbe31d00d4b09944dcd354"
+    },
+    {
+      "path": "config/indium-renderer.properties",
+      "hash": "57e6af52bb071a266e8ebcfc0d3c4d2b6b533634"
+    },
+    {
+      "path": "config/inventoryprofilesnext/inventoryprofiles.json",
+      "hash": "4c7be0dc642dfe1ab6894deb1d7a2513e9cfc280"
+    },
+    {
+      "path": "config/inventoryprofilesnext/ModIntegrationHints.json",
+      "hash": "0047a760e145b316bb01064313e2f41895243a05"
+    },
+    {
+      "path": "config/iris.properties",
+      "hash": "2e9858db1e0064ab33cf6b83512ecbcc64860557"
+    },
+    {
+      "path": "config/itemmodelfix.json",
+      "hash": "d1245fd9f9e2785338cfb319f229dc37589d77dc"
+    },
+    {
+      "path": "config/lambdynlights.toml",
+      "hash": "be7c41e4ac247ff2559cbb41c6d6fe20c26df957"
+    },
+    {
+      "path": "config/libgui.json5",
+      "hash": "aa2f828b3903fa48180cb314feb1107f4b4e42f2"
+    },
+    {
+      "path": "config/litematica/litematica_clientscript_test.json",
+      "hash": "af8ee9713b815975fe500bc58d13cd6424fb4895"
+    },
+    {
+      "path": "config/litematica/litematica_clientscript_test_dim_minecraft_overworld.json",
+      "hash": "408e491552f7aa897a2b033695c059f16a0e7d55"
+    },
+    {
+      "path": "config/litematica/litematica_localhost.json",
+      "hash": "af8ee9713b815975fe500bc58d13cd6424fb4895"
+    },
+    {
+      "path": "config/litematica/litematica_localhost_dim_minecraft_overworld.json",
+      "hash": "408e491552f7aa897a2b033695c059f16a0e7d55"
+    },
+    {
+      "path": "config/litematica/litematica_meawyo.me.json",
+      "hash": "af8ee9713b815975fe500bc58d13cd6424fb4895"
+    },
+    {
+      "path": "config/litematica/litematica_meawyo.me_dim_minecraft_overworld.json",
+      "hash": "408e491552f7aa897a2b033695c059f16a0e7d55"
+    },
+    {
+      "path": "config/litematica/litematica_nmsl.pet.json",
+      "hash": "af8ee9713b815975fe500bc58d13cd6424fb4895"
+    },
+    {
+      "path": "config/litematica/litematica_nmsl.pet_dim_minecraft_overworld.json",
+      "hash": "408e491552f7aa897a2b033695c059f16a0e7d55"
+    },
+    {
+      "path": "config/litematica/litematica_railway.dreamcraft.com.cn.json",
+      "hash": "af8ee9713b815975fe500bc58d13cd6424fb4895"
+    },
+    {
+      "path": "config/litematica/litematica_railway.dreamcraft.com.cn_dim_minecraft_overworld.json",
+      "hash": "408e491552f7aa897a2b033695c059f16a0e7d55"
+    },
+    {
+      "path": "config/litematica/litematica_v180.minemc.top.json",
+      "hash": "af8ee9713b815975fe500bc58d13cd6424fb4895"
+    },
+    {
+      "path": "config/litematica/litematica_v180.minemc.top_dim_minecraft_overworld.json",
+      "hash": "408e491552f7aa897a2b033695c059f16a0e7d55"
+    },
+    {
+      "path": "config/litematica/litematica_xplus.plus.json",
+      "hash": "af8ee9713b815975fe500bc58d13cd6424fb4895"
+    },
+    {
+      "path": "config/litematica/litematica_xplus.plus_dim_minecraft_overworld.json",
+      "hash": "ac6699914b11e49842904e08aca34bb496bdca86"
+    },
+    {
+      "path": "config/litematica/litematica_xplus.plus_dim_minecraft_the_end.json",
+      "hash": "408e491552f7aa897a2b033695c059f16a0e7d55"
+    },
+    {
+      "path": "config/litematica/litematica_xplus.plus_dim_minecraft_the_nether.json",
+      "hash": "408e491552f7aa897a2b033695c059f16a0e7d55"
+    },
+    {
+      "path": "config/litematica/litematica_____.json",
+      "hash": "040143e11c6eef0f77f06961d936f6033ccbc9bb"
+    },
+    {
+      "path": "config/litematica/litematica______dim_minecraft_overworld.json",
+      "hash": "408e491552f7aa897a2b033695c059f16a0e7d55"
+    },
+    {
+      "path": "config/litematica/material_cache.nbt",
+      "hash": "41242d8fa1d6ab8b73b787b1b6cc346f47ce549b"
+    },
+    {
+      "path": "config/litematica.json",
+      "hash": "6d67c7b4d55920a1476c9c40fc27128ce2d3de44"
+    },
+    {
+      "path": "config/lithium.properties",
+      "hash": "f4bb492c4e567251583252fffdbded3a6d441d2e"
+    },
+    {
+      "path": "config/malilib.json",
+      "hash": "18b3177f7bec0b96bc2b97b79c52a30db629fa99"
+    },
+    {
+      "path": "config/masa_gadget_mod.json",
+      "hash": "fa359e16ec5b35c49aef9fc8861a253a0a8baf55"
+    },
+    {
+      "path": "config/memoryusagescreen.toml",
+      "hash": "61e43e56fbdc154094cbecd659efae65b8bd7cd5"
+    },
+    {
+      "path": "config/minihud/clientscript_test.json",
+      "hash": "63334c29f8821e7373ea30d1056de2651da42a93"
+    },
+    {
+      "path": "config/minihud/clientscript_test_dim_minecraft_overworld.json",
+      "hash": "e708f04f738ce50f0f384bbb09fb8a6e50fa3537"
+    },
+    {
+      "path": "config/minihud/localhost.json",
+      "hash": "63334c29f8821e7373ea30d1056de2651da42a93"
+    },
+    {
+      "path": "config/minihud/localhost_dim_minecraft_overworld.json",
+      "hash": "e708f04f738ce50f0f384bbb09fb8a6e50fa3537"
+    },
+    {
+      "path": "config/minihud/meawyo.me.json",
+      "hash": "63334c29f8821e7373ea30d1056de2651da42a93"
+    },
+    {
+      "path": "config/minihud/meawyo.me_dim_minecraft_overworld.json",
+      "hash": "e708f04f738ce50f0f384bbb09fb8a6e50fa3537"
+    },
+    {
+      "path": "config/minihud/nmsl.pet.json",
+      "hash": "63334c29f8821e7373ea30d1056de2651da42a93"
+    },
+    {
+      "path": "config/minihud/nmsl.pet_dim_minecraft_overworld.json",
+      "hash": "e708f04f738ce50f0f384bbb09fb8a6e50fa3537"
+    },
+    {
+      "path": "config/minihud/railway.dreamcraft.com.cn.json",
+      "hash": "63334c29f8821e7373ea30d1056de2651da42a93"
+    },
+    {
+      "path": "config/minihud/railway.dreamcraft.com.cn_dim_minecraft_overworld.json",
+      "hash": "e708f04f738ce50f0f384bbb09fb8a6e50fa3537"
+    },
+    {
+      "path": "config/minihud/v180.minemc.top.json",
+      "hash": "63334c29f8821e7373ea30d1056de2651da42a93"
+    },
+    {
+      "path": "config/minihud/v180.minemc.top_dim_minecraft_overworld.json",
+      "hash": "e708f04f738ce50f0f384bbb09fb8a6e50fa3537"
+    },
+    {
+      "path": "config/minihud/xplus.plus.json",
+      "hash": "63334c29f8821e7373ea30d1056de2651da42a93"
+    },
+    {
+      "path": "config/minihud/xplus.plus_dim_minecraft_overworld.json",
+      "hash": "e708f04f738ce50f0f384bbb09fb8a6e50fa3537"
+    },
+    {
+      "path": "config/minihud/xplus.plus_dim_minecraft_the_end.json",
+      "hash": "e708f04f738ce50f0f384bbb09fb8a6e50fa3537"
+    },
+    {
+      "path": "config/minihud/xplus.plus_dim_minecraft_the_nether.json",
+      "hash": "e708f04f738ce50f0f384bbb09fb8a6e50fa3537"
+    },
+    {
+      "path": "config/minihud/____.json",
+      "hash": "63334c29f8821e7373ea30d1056de2651da42a93"
+    },
+    {
+      "path": "config/minihud/_____dim_minecraft_overworld.json",
+      "hash": "e708f04f738ce50f0f384bbb09fb8a6e50fa3537"
+    },
+    {
+      "path": "config/minihud.json",
+      "hash": "ab125ee0c6adabf185693bfcca8f62221ea5adcc"
+    },
+    {
+      "path": "config/modmenu.json",
+      "hash": "a2d00b0abe940aa88659c554493ce4dfd6f79e29"
+    },
+    {
+      "path": "config/mods-command.conf",
+      "hash": "99375936a72eb64810dca3a6008b2c7e0b8af0eb"
+    },
+    {
+      "path": "config/mousewheelie.hjson",
+      "hash": "03408621a560d52b26184ef864aab5e81e0a1e44"
+    },
+    {
+      "path": "config/mtr.json",
+      "hash": "7b139abdfe53730fd2e88c3e39bf871b0ad9525c"
+    },
+    {
+      "path": "config/notenoughanimations.json",
+      "hash": "ad0655fec8d629fbe7a808b7ac71dd8e52689779"
+    },
+    {
+      "path": "config/orderly.json",
+      "hash": "29ff0c51e03144e0fafc430113e24acae016edaa"
+    },
+    {
+      "path": "config/respackopts/_respackopts.conf",
+      "hash": "8cabeac30d79226ddeea5acb7d5126e3b9c39954"
+    },
+    {
+      "path": "config/roughlyenoughitems/config.json5",
+      "hash": "bc55f85a0a063b119ba4d392124cd7b79d2b1472"
+    },
+    {
+      "path": "config/rrp.properties",
+      "hash": "e985c58d0ce8f2762c6020150d7c1cd74ed4a5f8"
+    },
+    {
+      "path": "config/shulkerboxtooltip.json5",
+      "hash": "a38018139a93ec03cb66a575cc1d0a1f3f1eed7d"
+    },
+    {
+      "path": "config/skinlayers.json",
+      "hash": "7391dca1102b84687c16421dff07ec7375bc8c5e"
+    },
+    {
+      "path": "config/slightguimodifications/config.json5",
+      "hash": "7325806ed8d841061680d9240b2669dd2bec5901"
+    },
+    {
+      "path": "config/slightguimodifications/cts.groovy",
+      "hash": "5b23a18247e1c2417123bc1c0d5ea9a5367d9dd7"
+    },
+    {
+      "path": "config/sodium-extra-options.json",
+      "hash": "649c57703daef925bfa3395033aaedc7b87ac00e"
+    },
+    {
+      "path": "config/sodium-extra.properties",
+      "hash": "e90b2514226a0624cf42112b42477f9872598b89"
+    },
+    {
+      "path": "config/sodium-mixins.properties",
+      "hash": "09db7f09d6dfd063ec4c7c534102892d67655d98"
+    },
+    {
+      "path": "config/sodium-options.json",
+      "hash": "c3b16e20097fe5693519a03b83d060032978ced1"
+    },
+    {
+      "path": "config/stendhal/stendhal.properties",
+      "hash": "f77698497c92f2a5ff82e9c5c001a4838d9c8189"
+    },
+    {
+      "path": "config/tweakeroo.json",
+      "hash": "f38b603019fa35070f3f599a593c90849e910db1"
+    },
+    {
+      "path": "config/tweakmyclient.json",
+      "hash": "23de3821eedcd72e272cab10912c63cf3c7935f0"
+    },
+    {
+      "path": "config/ViaFabric/viafabric.yml",
+      "hash": "52733a94baa0afa214429c9fa70bb35ecd298edf"
+    },
+    {
+      "path": "config/ViaFabric/viaversion.yml",
+      "hash": "9d455481e6ba1df6ce9526d5833012128ba88a94"
+    },
+    {
+      "path": "config/voxelmap.properties",
+      "hash": "801202a9578c605d44cbd03330d5b2336345367a"
+    },
+    {
+      "path": "config/waila/blacklist.json",
+      "hash": "1128a7a6ba3b485802dae4c5b9850d313cebc5d3"
+    },
+    {
+      "path": "config/waila/waila.json",
+      "hash": "68c20293979a2191dd3172bf629d83b3915d4565"
+    },
+    {
+      "path": "config/waila/waila_plugins.json",
+      "hash": "a76331a82d6dee8c0056a3b9b60c71c568615eed"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/.unpack_finished",
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/af/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ar/strings.json",
+      "hash": "eb7aca3e7bf344549878fcb30c7f50e66c9c04cd"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ast/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/az/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ba/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/be/strings.json",
+      "hash": "c60574caff3a7a6dd8846a49bf80fc25c41f394c"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/bg/strings.json",
+      "hash": "c0e34950ff125d70db2890a5bc2bc79286dfa4be"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/br-FR/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/brb/strings.json",
+      "hash": "4d12e8bb0d0e00eaa8dc3ee1e417776fdee97643"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/bs/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ca/strings.json",
+      "hash": "a3b7bdfec7a09c4e38f50f198624768e29b0b5d6"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/cs/strings.json",
+      "hash": "6b9e4dad49b46fb700b18d0aa75d8461cd3b5c90"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/cy/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/da/strings.json",
+      "hash": "0364013945a196df3d24a984753d19f80608f8ef"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/de/strings.json",
+      "hash": "02afc3e33312a76a16d423b54bc8ebc0cf682140"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/de-AT/strings.json",
+      "hash": "02afc3e33312a76a16d423b54bc8ebc0cf682140"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/de-CH/strings.json",
+      "hash": "cc296ccb2a3a69a2bdb33d8f3137b7137619336d"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/el/strings.json",
+      "hash": "2322030c3ec0723fe5a5990b11dcda6c9b7d3f3f"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/en-AU/strings.json",
+      "hash": "33271dc0b40bc0d7a24b9f61d3131e3ae55a808a"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/en-CA/strings.json",
+      "hash": "d76eba76d98123e6d72a0240eab564145a273764"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/en-NZ/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/en-PT/strings.json",
+      "hash": "324bb32bb400cfa4815f577c188eba10692a87e0"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/en-UD/strings.json",
+      "hash": "dae16763f8f3309d7e52511b8bf387501fc35548"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/enp/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/eo/strings.json",
+      "hash": "7c7e9812a5fea5ff44dafbad060d0631ed22ebbe"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/es-AR/strings.json",
+      "hash": "bc9065046c72beada67cc91bde3d98770acbe288"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/es-CL/strings.json",
+      "hash": "f025a25029b0a7eebf37b2dac8eed5e567869867"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/es-ES/strings.json",
+      "hash": "1c5fc3b7478b635def45cc3103a9394fe6d35710"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/es-MX/strings.json",
+      "hash": "1c5fc3b7478b635def45cc3103a9394fe6d35710"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/es-UY/strings.json",
+      "hash": "1c5fc3b7478b635def45cc3103a9394fe6d35710"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/es-VE/strings.json",
+      "hash": "00ce8803a69fae4dd4d65c55223ffc3dd6630fde"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/et/strings.json",
+      "hash": "7c9f8fc602d158667a112341b013ea8a0f662e30"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/eu/strings.json",
+      "hash": "1e8a373d399d0a356eded4df368e06a6f18e8f63"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/fa/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/fi/strings.json",
+      "hash": "a66a02e0ab974728bb02470ceef4fa5a3ba91721"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/fil/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/fo/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/fr/strings.json",
+      "hash": "4e6d4f6957d9042ba1075e0f94c0b4ac8828a91d"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/fr-CA/strings.json",
+      "hash": "5f9029381123f5822e27d2da308adcd52d15a58c"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/fra-DE/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/fy-NL/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ga-IE/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/gd/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/gl/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/got/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/gv/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/haw/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/he/strings.json",
+      "hash": "bb1f9a33fb26ed2125279687066ce6647e588839"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/hi/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/hr/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/hu/strings.json",
+      "hash": "9e67f756bbf76d9bb5971f0ec5a8bada354fcda7"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/hy-AM/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/id/strings.json",
+      "hash": "396158aa200c2af801ba15826fa0356abb9f682c"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ido/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ig/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/is/strings.json",
+      "hash": "8c719af96631d6a6c2d70c8a487c67f617fc0ca9"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/it/strings.json",
+      "hash": "2f6a5db7985579763165efa2affb651460bc9eef"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ja/strings.json",
+      "hash": "6616eb900ce6ebb4e5920c0925eeef7e3e37cfce"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/jbo/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ka/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/kab/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/kk/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/kn/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ko/strings.json",
+      "hash": "e7c8c8054a0da08d45547dec13f082097f4b2626"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ksh/strings.json",
+      "hash": "02afc3e33312a76a16d423b54bc8ebc0cf682140"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/kw/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/la-LA/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/lb/strings.json",
+      "hash": "5184eb63dcc1b5280d91902c7285d1a827643960"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/li/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/lol/strings.json",
+      "hash": "53a9f018460300fb51ef613e0cec43f536546e34"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/lt/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/lv/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/mi/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/mk/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/mn/strings.json",
+      "hash": "5a1347a5588e481dd86ab92dc3ad84f316ff602a"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/moh/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ms/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/mt/strings.json",
+      "hash": "235d227d4aeafb56c808c5257509d38c8c40e2c7"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/nds/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/nl/strings.json",
+      "hash": "4d12e8bb0d0e00eaa8dc3ee1e417776fdee97643"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/nl-BE/strings.json",
+      "hash": "68f394011931604ae0623fb3fdbb77b300791f10"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/nn-NO/strings.json",
+      "hash": "bfd75f722dd1bcbda5b6ba8ace158f391fa7e89e"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/no/strings.json",
+      "hash": "bfd75f722dd1bcbda5b6ba8ace158f391fa7e89e"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/nuk/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/oc/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/oj/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/pl/strings.json",
+      "hash": "c3eb4e85056f1ecfe6c2fe62dcd8fb6c67bcfa71"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/pt-BR/strings.json",
+      "hash": "9ded7fe8c66acc4cd043e1ba18eafd2c75f61fb8"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/pt-PT/strings.json",
+      "hash": "088167f7b1d4fec597fe4bab1ce83da896f4115e"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/qya-AA/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ro/strings.json",
+      "hash": "dbf641475bc55db3a776a6ca0088cdf835bc0e35"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ru/strings.json",
+      "hash": "1be8e90bfec09a4d92d78cd496324b57f767f436"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/se/strings.json",
+      "hash": "0e89ce1223b6b90c69c809a56441d3a9480eeccb"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/sk/strings.json",
+      "hash": "3460136113848963844612776902d6fa4e6343c8"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/sl/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/so/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/sq/strings.json",
+      "hash": "08655754f4bf8e9ff1aed11cc550ed72f548ad4c"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/sr/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/strings.json",
+      "hash": "792c944c9a71d1ac89669ee6e0b624a31094b1e4"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/sv-SE/strings.json",
+      "hash": "1b9d0d7339e86e204314d6d7eb6ae0fb089527b4"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/swg/strings.json",
+      "hash": "02afc3e33312a76a16d423b54bc8ebc0cf682140"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/szl/strings.json",
+      "hash": "c3eb4e85056f1ecfe6c2fe62dcd8fb6c67bcfa71"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/ta/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/th/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/tlh-AA/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/tr/strings.json",
+      "hash": "1154120fc7238ed77b82674268d4ea0b6da4fa0c"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/tt-RU/strings.json",
+      "hash": "ff503a4bf90a11bb6ccc2bca6d0b2dd57bf42003"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/tzl/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/uk/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/val-ES/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/vec/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/vi/strings.json",
+      "hash": "2069d274a20fd8b178e30f1c5c4489e2e15a9d83"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/yi/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/yo/strings.json",
+      "hash": "5f36b2ea290645ee34d943220a14b54ee5ea5be5"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/zh-CN/strings.json",
+      "hash": "daf2870641ffe834cee67eeec30c458a43c0eada"
+    },
+    {
+      "path": "config/worldedit/.archive-unpack/2e1dd752/zh-TW/strings.json",
+      "hash": "8c8421d8d42a6da81087c5e70fb5e4b55851c0cb"
+    },
+    {
+      "path": "config/worldedit/worldedit.properties",
+      "hash": "743cee35402035106e8e6dd1ff43b8bc3bd357a1"
+    },
+    {
+      "path": "config/xaerominimap.txt",
+      "hash": "85e398f5183643908b0ab5228324dbddefda493c"
+    },
+    {
+      "path": "config/xaerominimap_entities.json",
+      "hash": "43f6bb5b1ed673589fa6cee3574ff6c738a0f7b1"
+    },
+    {
+      "path": "config/xaeropatreon.txt",
+      "hash": "ea102322bdf5be36acef1ed783e85b6a0d1ee418"
+    },
+    {
+      "path": "config/xaeroworldmap.txt",
+      "hash": "0bc428d7ef58291828b69fc817f344a6702b2174"
+    },
+    {
+      "path": "CustomSkinLoader/CustomSkinAPIPlus-ClientID",
+      "hash": "aad4bbc5a7e7b5bf7f7d7bbb436e05ba4181041f"
+    },
+    {
+      "path": "CustomSkinLoader/CustomSkinLoader.json",
+      "hash": "d2a6ce9fa7a30885365170723eb7d9450e88d962"
+    },
+    {
+      "path": "hmclversion.cfg",
+      "hash": "562664fb3a6adc10f08b2e5b87acb9cb074974f6"
+    },
+    {
+      "path": "log4j2.xml",
+      "hash": "d47d254675d1aee18670aece5ed768e1e631517b"
+    },
     {
       "path": "mods/ChiselsBits-fabric-1.18.1-1.2.77.jar",
       "hash": "abbccbc4f36d89782754ee7f69fb4c490058d9f4"
@@ -18,20 +990,640 @@
       "hash": "174c86dbdbf4fd51f2c7974c0fa2f7919c01c08e"
     },
     {
+      "path": "mods/test.txt",
+      "hash": "cf8345a38fb3f5d59209f4d6d021f04705e779e0"
+    },
+    {
       "path": "mods/Xaeros_Minimap_21.23.0_Fabric_1.18.jar",
       "hash": "9ff5e07f9738822971e5362fdf76e76e239b3a2a"
+    },
+    {
+      "path": "mods/[优化][动态FPS]dynamic-fps-2.0.6.jar",
+      "hash": "db76cb84fe9abe9301e29a49457c030d6e54d948"
+    },
+    {
+      "path": "mods/[优化][实体方块优化]enhancedblockentities-0.5+1.18.jar",
+      "hash": "c7111f560caf965c18a13edcfbe789a87cf904f4"
+    },
+    {
+      "path": "mods/[优化][实体渲染优化]EntityCulling-Fabric-1.3.3.jar",
+      "hash": "17e958986004107f980fe17fbe902abffb662a1a"
+    },
+    {
+      "path": "mods/[优化][星光区块加载优化]starlight-1.0.0+fabric.d0a3220.jar",
+      "hash": "743b14918588186cae2117d1a9684b400939e6f8"
+    },
+    {
+      "path": "mods/[优化][游戏加载速度优化]lazydfu-0.1.2.jar",
+      "hash": "2efec5781f1271bdcdae462eee402ccb97bff6fe"
+    },
+    {
+      "path": "mods/[优化][钠]sodium-fabric-mc1.18.1-0.4.0-alpha6+build.14.jar",
+      "hash": "795d4c12bffdb1b21eed5ff87c07ce5ca3c0dcbf"
+    },
+    {
+      "path": "mods/[优化][铁氧体磁芯(内存优化)]ferritecore-4.0.0-fabric.jar",
+      "hash": "e29e1f3991ea94a161eebd9faf68f9d489d588f3"
+    },
+    {
+      "path": "mods/[优化][锂]lithium-fabric-mc1.18.1-0.7.7.jar",
+      "hash": "8eaffcb994e67ac7b3fd2efa526f7721f8327d11"
+    },
+    {
+      "path": "mods/[修复][物品模型修复]item-model-fix-1.0.3+1.18.jar",
+      "hash": "2aa679f2dc887e2ce45d55fffe67af36250b4841"
+    },
+    {
+      "path": "mods/[修复][聊天卡顿修复]chatlagfix-1.0.0.jar",
+      "hash": "675497138d58c3fe0f53aaddd17a8dce98ecbc36"
     },
     {
       "path": "mods/[创世神] worldedit-mod-7.2.8.jar",
       "hash": "6f82fb0943421681023c5b3d3afdd87ebb4a2034"
     },
     {
-      "path": "servers.dat",
-      "hash": "7bfef77ff49f4752b23705e7d71b3b13a73aed8f"
+      "path": "mods/[前置][Architectury API]architectury-3.0.39.jar",
+      "hash": "f199a426d13149635bb3788154fcbf83dd628b69"
+    },
+    {
+      "path": "mods/[前置][Cloth API]cloth-api-2.0.54.jar",
+      "hash": "f537a052c8e4351ec391e8126d106248a1f9336b"
+    },
+    {
+      "path": "mods/[前置][cloth config]cloth-config-6.0.42-fabric.jar",
+      "hash": "b49e4fc3497cb80c632b294fdcb455605ed79b58"
+    },
+    {
+      "path": "mods/[前置][Fabric Rendering API支持]indium-1.0.2-alpha2+mc1.18.1.jar",
+      "hash": "111912f57b1edd769b19c24419390db0652fd0c6"
+    },
+    {
+      "path": "mods/[前置][masa前置]malilib-fabric-1.18.0-0.10.0-dev.26.jar",
+      "hash": "dddd708c76ed5bcb79a8147cd7b0a46fa8091ab0"
+    },
+    {
+      "path": "mods/[前置][配置前置]completeconfig-lib-1.3.3.jar",
+      "hash": "bdf33e87d89872fd0c2b6992cd467c6777e75e42"
+    },
+    {
+      "path": "mods/[功能][C键缩放]WI-Zoom-1.3-MC1.18.jar",
+      "hash": "e92a480c4cfdce43e2354802c80468055b6ff6f5"
+    },
+    {
+      "path": "mods/[功能][Optifine格式动态材质支持]animatica-0.3+1.18.jar",
+      "hash": "6b384abe9836f17b6287c2bd22fb85189f9101eb"
+    },
+    {
+      "path": "mods/[功能][Optifine格式连接材质支持]continuity-1.0.3+1.18.jar",
+      "hash": "40942242ea1eb748c0adb1369bc9a5cb103be2b0"
+    },
+    {
+      "path": "mods/[功能][Optifine赞助披风支持]fabric-optifine-capes-2.0.0.jar",
+      "hash": "50061bc537061b33f8ec782335ff325f31d502b5"
+    },
+    {
+      "path": "mods/[功能][REI物品管理器]RoughlyEnoughItems-fabric-7.0.339.jar",
+      "hash": "a4276d7b615c00d4d01d7028c6998ca09b5a0405"
+    },
+    {
+      "path": "mods/[功能][R键整理]InventoryProfilesNext-fabric-1.18-1.1.8.jar",
+      "hash": "552a8b3e7a81eb566f8b5639ba37adcff66ab5e6"
+    },
+    {
+      "path": "mods/[功能][Xaero的世界地图]XaerosWorldMap_1.20.0_Fabric_1.18.jar",
+      "hash": "9a0867e0f4d3f0dbe35a8ad5a09e3f6f74723b17"
+    },
+    {
+      "path": "mods/[功能][万用皮肤补丁]CustomSkinLoader_Fabric-14.13-SNAPSHOT-313.jar",
+      "hash": "aecd16f0509e0789417ed82ae1e4e87bd1da4ba5"
+    },
+    {
+      "path": "mods/[功能][地毯]fabric-carpet-1.18-1.4.56+v211130.jar",
+      "hash": "2c3ace8fa693441feacb63bad69ca3a38ee1587c"
+    },
+    {
+      "path": "mods/[功能][客户端修改]TweakMyClient-fabric-mc1.18-Snapshot-1.1.11+bba69f9.jar",
+      "hash": "4d0f19d1793fa5f22565dede532fa7ad7c4fd5dd"
+    },
+    {
+      "path": "mods/[功能][快捷键设置优化]Controlling-fabric-1.18.1-9.0.8.jar",
+      "hash": "64104790065709a957d4343e8092ddd5dd596039"
+    },
+    {
+      "path": "mods/[功能][投影]litematica-fabric-1.18.0-0.9.0.jar",
+      "hash": "5fba30338e276b5794ef780ad111c3c836d03234"
+    },
+    {
+      "path": "mods/[功能][操作改变]tweakeroo-fabric-1.18.0-0.11.0.jar",
+      "hash": "030c9f2041005fc3bbe83244dd4cab12c8ef97dd"
+    },
+    {
+      "path": "mods/[功能][更好的局域网世界]mcwifipnp-1.5.3-1.18-fabric.jar",
+      "hash": "c6edeee637f8108e9768bbed7a9af280e00a6962"
+    },
+    {
+      "path": "mods/[功能][更好的村民交易]easiervillagertrading-1.18-fabric0.43.1-1.5.4.jar",
+      "hash": "d3e8dddfa088179199d1b349243cb4308735d40e"
+    },
+    {
+      "path": "mods/[功能][更好的钠视频设置按钮]bsvsb-2.0.5.jar",
+      "hash": "4399dd83c2a1d1cca8169d31fcebe8fdb30685bd"
+    },
+    {
+      "path": "mods/[功能][游戏内账号切换]InGameAccountSwitcher-Fabric-1.18-7.1.3.jar",
+      "hash": "2e2a348a6f787a52d7dfa587f13e8392690ec77c"
+    },
+    {
+      "path": "mods/[功能][聊天栏防遮挡]chat-up-2.0.0.jar",
+      "hash": "99291fc92de714ff466526bf5679bf781480d2b0"
+    },
+    {
+      "path": "mods/[功能][自动第三人称视角]auto_third_person-1.18-1.1.0.jar",
+      "hash": "ffff9461d25b243368758674d00674b793c5950b"
+    },
+    {
+      "path": "mods/[功能][输入法冲突修复]imblockerfabric-1.0.17.jar",
+      "hash": "05471f030ea9f4920cb4cd95e3353c209dbc745b"
+    },
+    {
+      "path": "mods/[功能][鼠标滚轮]mousewheelie-1.8.0+mc1.18-pre5.jar",
+      "hash": "a6bfc954e33a23ead3b92de3adcc45598ebceb09"
+    },
+    {
+      "path": "mods/[拓展][钠 · 扩展]sodium-extra-mc1.18.1-0.3.8.jar",
+      "hash": "0702cc8dc73eff1613ca37ece81d1124bc39cdf6"
+    },
+    {
+      "path": "mods/[显示][mod菜单]modmenu-3.0.0.jar",
+      "hash": "ef5e17e394d0031b35b0b185b7c3d9eee295ecaf"
+    },
+    {
+      "path": "mods/[显示][内存占用显示]MemoryUsageScreen-1.17-1.2.jar",
+      "hash": "6381e8e65d171fb7e9653ce463a49d48a2d30129"
+    },
+    {
+      "path": "mods/[显示][准星物品显示]wthit-fabric-4.2.0.jar",
+      "hash": "1f5e61f9142e69be88510e169229e777afbeec3d"
+    },
+    {
+      "path": "mods/[显示][划船地图显示]Boat-Item-View-Fabric-1.18-0.0.3.jar",
+      "hash": "dc48a1b617ea555013aec9f4ceb02b84c68994fe"
+    },
+    {
+      "path": "mods/[显示][动态光源]lambdynamiclights-2.1.0+1.17.jar",
+      "hash": "812fdc41518b786f05d72de4017c16c88a3e2ea6"
+    },
+    {
+      "path": "mods/[显示][微小的GUI调整]slight-gui-modifications-2.0.2.jar",
+      "hash": "1e0167bec3b952eaf8dd8b6578c15cf852f6c999"
+    },
+    {
+      "path": "mods/[显示][更好的攻击指示器]enhanced_attack_indicator-1.0.2+1.18.jar",
+      "hash": "58db14fbeeeb7d9fe30172e70df6b800fdc3224c"
+    },
+    {
+      "path": "mods/[显示][潜影盒工具提示]shulkerboxtooltip-3.0.5+1.18.jar",
+      "hash": "8d182b6db8e2fe15891353bbc650b4cc665c3422"
+    },
+    {
+      "path": "mods/[显示][物品耐久显示]durabilityviewer-1.18-fabric0.43.1-1.10.2.jar",
+      "hash": "65d508c8a979c4ad047aee1a2b33ca716057a42e"
+    },
+    {
+      "path": "mods/[显示][盔甲条颜色显示]armorchroma-1.1.0.jar",
+      "hash": "37661213b1575cc62d73bb2b2d3649766bb0914c"
+    },
+    {
+      "path": "mods/[显示][聊天头像显示]chat_heads-0.5.1-fabric-1.18.jar",
+      "hash": "85d461a479e0b87e91d5e269444ccc405507b345"
+    },
+    {
+      "path": "mods/[显示][苹果皮]appleskin-fabric-mc1.18-2.2.0.jar",
+      "hash": "2f5c7b7bc8748e8303edf74cd4168ab949ddd3f6"
+    },
+    {
+      "path": "mods/[显示][血量显示]orderly-2.0.1-alpha.2+custom-1.18.jar",
+      "hash": "8ab9289211c0af7477e9ebf77e601e2739d82d70"
+    },
+    {
+      "path": "mods/[显示][过长tooltip换行显示]tooltipfix-1.0.4-1.18.jar",
+      "hash": "16b844c45ce0e4f1159ff51739479e8747a64d84"
+    },
+    {
+      "path": "mods/[显示][进度信息]advancementinfo-1.18-fabric0.43.1-1.3.jar",
+      "hash": "2ff0ac3fc5f6a2e274741cfa4f55eea8044161bd"
+    },
+    {
+      "path": "mods/[显示][迷你F3]minihud-fabric-1.18.0-0.19.0-dev.20211204.230657.jar",
+      "hash": "8024741a914f839700548daa5924fdd07e082d6b"
+    },
+    {
+      "path": "mods/[显示][随机标题]RandomTitle-Fabric-1.0.7.jar",
+      "hash": "d51395ab0a4b9fda83e2d25507693f6e82077d4f"
+    },
+    {
+      "path": "mods/[美化][Iris Shader光影加载器]iris-mc1.18.1-1.2.0-pre.jar",
+      "hash": "46929a33ac1811bd4b919604e262234161243f82"
+    },
+    {
+      "path": "mods/[美化][Tab页面玩家大头照美化]hatlist-1.2.jar",
+      "hash": "792d7412c35399c512771435a3ed22f89d198fbc"
+    },
+    {
+      "path": "mods/[美化][更多动作]notenoughanimations-fabric-1.4.0-mc1.18-pre1.jar",
+      "hash": "2603a34d3df8ca6578abc95250f03e2512a0972d"
+    },
+    {
+      "path": "mods/[美化][更好的3d皮肤]3dSkinLayers-Fabric-1.3.1.jar",
+      "hash": "eddc590602e016b974ee8e5ac2837349a2d95043"
+    },
+    {
+      "path": "mods/[附属][Carpet客户端侧增强]essential-client-1.18.1-1.1.2.jar",
+      "hash": "02c7f7db9db6c61d31242d257415b3e0b98726fd"
+    },
+    {
+      "path": "mods/[附属][Carpet拓展]carpet-extra-1.18-1.4.56.jar",
+      "hash": "57f63f089436502ac3ae132c4abc475b41bbb2a0"
+    },
+    {
+      "path": "mods/[附属][masa工具]MasaGadget-fabric-1.18-rc3-2.0.7-alpha.114514.jar",
+      "hash": "d663f2b7beeb8f4fb854d40843ab519d3a1f869c"
+    },
+    {
+      "path": "mods/[附属][我能挖这个方块吗]can-i-mine-this-block-1.1.0.jar",
+      "hash": "611dc2c58e1ca5419355e72e6ca7e33b2ac6b381"
+    },
+    {
+      "path": "mods/[附属][迷你F3汉化]MiniHUD-Injector-fabric-mc1.16-1.2.0+916ad27.jar",
+      "hash": "946368bf1d324fffe207db21d0f90dfe8c3800b7"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/cs_cz.json",
+      "hash": "df585076d31011ea1c1881976eac49651a6f4369"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/de_at.json",
+      "hash": "554fbfabef9d65bd906599b54c9a988bec048ead"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/de_ch.json",
+      "hash": "554fbfabef9d65bd906599b54c9a988bec048ead"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/de_de.json",
+      "hash": "554fbfabef9d65bd906599b54c9a988bec048ead"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/el_gr.json",
+      "hash": "dc52754868439c7cc2cfafbb4f9e8b638c4a03b9"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/es_ar.json",
+      "hash": "605eae52609ae6cdef51a9c02bad44687a4595bd"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/es_cl.json",
+      "hash": "605eae52609ae6cdef51a9c02bad44687a4595bd"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/es_ec.json",
+      "hash": "605eae52609ae6cdef51a9c02bad44687a4595bd"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/es_es.json",
+      "hash": "605eae52609ae6cdef51a9c02bad44687a4595bd"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/es_mx.json",
+      "hash": "605eae52609ae6cdef51a9c02bad44687a4595bd"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/es_uy.json",
+      "hash": "605eae52609ae6cdef51a9c02bad44687a4595bd"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/es_ve.json",
+      "hash": "605eae52609ae6cdef51a9c02bad44687a4595bd"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/et_ee.json",
+      "hash": "7abbe7e07fd633d20f52277767b232537c5291e2"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/fi_fi.json",
+      "hash": "167a9203ed1de2288e4da597f7b0e594e2bc5f51"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/fr_ca.json",
+      "hash": "70f0fc1548aae8f9c498c363da7199e45b2d236e"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/fr_fr.json",
+      "hash": "70f0fc1548aae8f9c498c363da7199e45b2d236e"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/he_il.json",
+      "hash": "794d91640a16c925591a7bf27fa3910e617b3c48"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/it_it.json",
+      "hash": "c38e929a85b7e008a45d017a2321624fd4eb7114"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/ja_jp.json",
+      "hash": "e18091960e6951591cfb32f47df9e9443a49e815"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/ko_kr.json",
+      "hash": "8cc347dc263a115bbe188bba0b978fb35e8f2e55"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/nl_be.json",
+      "hash": "3addfd1e31ec58f0fe0a7905e912db2d784c094b"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/nl_nl.json",
+      "hash": "3addfd1e31ec58f0fe0a7905e912db2d784c094b"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/nn_no.json",
+      "hash": "688fcfe8cd0a1e03840dc07fe5c22190f4fd0f41"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/no_no‌.json",
+      "hash": "688fcfe8cd0a1e03840dc07fe5c22190f4fd0f41"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/pl_pl.json",
+      "hash": "979eb9707642770e90c33fdb35a675c021105e5c"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/pt_br.json",
+      "hash": "a751530e90d084e97394fe1c526112f6c0dc4f3c"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/pt_pt.json",
+      "hash": "a751530e90d084e97394fe1c526112f6c0dc4f3c"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/ro_ro.json",
+      "hash": "dc52754868439c7cc2cfafbb4f9e8b638c4a03b9"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/ru_ru.json",
+      "hash": "800e9ba1712bf14f3d2f62f6b67105a0ab2b75dd"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/sr_sp.json",
+      "hash": "833476840020c875f789c15405d330a42de32184"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/sv_se.json",
+      "hash": "dc52754868439c7cc2cfafbb4f9e8b638c4a03b9"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/tr_tr.json",
+      "hash": "7634040a1fea09681c4437c409314e2f5e3e849d"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/uk_ua.json",
+      "hash": "dc52754868439c7cc2cfafbb4f9e8b638c4a03b9"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/zh_cn.json",
+      "hash": "275a355693ffe925059ae2bcea8075c8504a700d"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/zh_hk.json",
+      "hash": "275a355693ffe925059ae2bcea8075c8504a700d"
+    },
+    {
+      "path": "ModTranslations/assets/durabilityviewer/lang/zh_tw.json",
+      "hash": "554475698a653f2a3bf2acd28cb6c0317d0adcd4"
+    },
+    {
+      "path": "ModTranslations/durabilityviewer.timestamp",
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
+      "path": "natives-windows-x86_64/glfw.dll",
+      "hash": "9d95a8f52cbd48ab87937714eb4fd2129ed10f0a"
+    },
+    {
+      "path": "natives-windows-x86_64/glfw32.dll",
+      "hash": "b9a18c65931b474a453cca5b20903220975f0fc9"
+    },
+    {
+      "path": "natives-windows-x86_64/jemalloc.dll",
+      "hash": "8a6eb00b934da6c97b0dc9d2dc321843076c8987"
+    },
+    {
+      "path": "natives-windows-x86_64/jemalloc32.dll",
+      "hash": "0d3c5c4d18d9a60501bce1f586684cd2fc5c466f"
+    },
+    {
+      "path": "natives-windows-x86_64/lwjgl.dll",
+      "hash": "d01410449d2402a952e9a6063699f1868196883f"
+    },
+    {
+      "path": "natives-windows-x86_64/lwjgl32.dll",
+      "hash": "a7aa4fbaa375fd39c4cb8eabeef45b44d5848bcb"
+    },
+    {
+      "path": "natives-windows-x86_64/lwjgl_opengl.dll",
+      "hash": "8e9836dd0d1691356db654aa02533ad80e9bf52c"
+    },
+    {
+      "path": "natives-windows-x86_64/lwjgl_opengl32.dll",
+      "hash": "2e0fe073b23ab972af00025097efcfcb446d927f"
+    },
+    {
+      "path": "natives-windows-x86_64/lwjgl_stb.dll",
+      "hash": "8b047fb3f6c31946fe33157e7912ac31595cd3b8"
+    },
+    {
+      "path": "natives-windows-x86_64/lwjgl_stb32.dll",
+      "hash": "1c28819763f77cbb4593a95b1cbb0999f136695d"
+    },
+    {
+      "path": "natives-windows-x86_64/lwjgl_tinyfd.dll",
+      "hash": "ec0fd8007afba6697d5b3b8249b5be27096a0ce8"
+    },
+    {
+      "path": "natives-windows-x86_64/lwjgl_tinyfd32.dll",
+      "hash": "079540a19727772f056cd80535e9645a674190b4"
+    },
+    {
+      "path": "natives-windows-x86_64/META-INF/INDEX.LIST",
+      "hash": "304659e97a4889e314e2ef15632d1ab02c19827e"
+    },
+    {
+      "path": "natives-windows-x86_64/META-INF/MANIFEST.MF",
+      "hash": "bb30425dff1ace753caf8b4f1d50a1a37c4fbaa5"
+    },
+    {
+      "path": "natives-windows-x86_64/META-INF/versions/9/module-info.class",
+      "hash": "4fda2f05729e5b34e9f5ae9deff1d516beab238b"
+    },
+    {
+      "path": "natives-windows-x86_64/OpenAL.dll",
+      "hash": "dc8f7a5704164fe3dff3631c326bab7159a9358d"
+    },
+    {
+      "path": "natives-windows-x86_64/OpenAL32.dll",
+      "hash": "aa3fa9446b7c1264e2b463bb53946718e4f8ce82"
+    },
+    {
+      "path": "natives-windows-x86_64/SAPIWrapper_x64.dll",
+      "hash": "c4a293116e7531d950db2d5ea737e61a9912b61d"
+    },
+    {
+      "path": "natives-windows-x86_64/SAPIWrapper_x86.dll",
+      "hash": "70e85ab3f880a7c3d5f0a9aae0f65661cb8af5a6"
+    },
+    {
+      "path": "options.amecsapi.txt",
+      "hash": "60bf96115a36c599194c3bc8cfdc0f030928481f"
+    },
+    {
+      "path": "PCL/Setup.ini",
+      "hash": "33db7ec62d7d7e5eeecbc7a91be724a986d98ad9"
+    },
+    {
+      "path": "resourcepacks/railway-sounds.zip",
+      "hash": "4e14f07394134a851a4e365864de7d1ccc29395f"
+    },
+    {
+      "path": "resourcepacks/XPlus ClassicOre by Bili@_Flare_ MCBBS@gfbdhd port by Wudji.zip",
+      "hash": "b3abef5d93be679688a2b7d78c81986226633138"
+    },
+    {
+      "path": "resourcepacks/XPlus 配套基础材质[masa汉化][反南瓜头GUI]v0.0.3.zip",
+      "hash": "ebcb02152ea47a0b7327a7cd24e51fd46f39a7d0"
+    },
+    {
+      "path": "resourcepacks/小地图汉化by新兵sinbing@bilibili.txt",
+      "hash": "c7120450dd385658d669c3b2b8a0f78a780f8244"
+    },
+    {
+      "path": "resourcepacks/思源黑体.zip",
+      "hash": "d6bfd7ba40358ad7d052ef339fb28107fa24bd50"
     },
     {
       "path": "servers.dat_old",
       "hash": "6b5d9497e7992333ddef5c2784f8522cfb640fe8"
+    },
+    {
+      "path": "shaderpacks/[光影][汉化]ComplementaryShaders_v4.3.3.zip",
+      "hash": "8a0933e3f742ef02157a83ffb864aca17b3d0ab7"
+    },
+    {
+      "path": "shaderpacks/超低配光影水反.zip",
+      "hash": "0be861ce9383533519fc6f8a54f1ad6bc2610357"
+    },
+    {
+      "path": "title.yml",
+      "hash": "fc37fdcba7dfe696299908a0a52965797f494de0"
+    },
+    {
+      "path": "XaeroWaypoints/Multiplayer_railway.dreamcraft.com.cn/config.txt",
+      "hash": "da6720faf832c144e34c09cb569a4f0dcdf52bc6"
+    },
+    {
+      "path": "XaeroWaypoints_BACKUP032021/Multiplayer_railway.dreamcraft.com.cn/config.txt",
+      "hash": "da6720faf832c144e34c09cb569a4f0dcdf52bc6"
+    },
+    {
+      "path": "XaeroWorldMap/Multiplayer_railway.dreamcraft.com.cn/null/dimension_config.txt",
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
+      "path": "XaeroWorldMap/Multiplayer_railway.dreamcraft.com.cn/null/mw$default/-1_-1.zip",
+      "hash": "0c02245eef6fb19f68dcec7457b44155bd3f69a4"
+    },
+    {
+      "path": "XaeroWorldMap/Multiplayer_railway.dreamcraft.com.cn/null/mw$default/-1_0.zip",
+      "hash": "fa611295b8b439baaf457ef0968d96f75be6c80c"
+    },
+    {
+      "path": "XaeroWorldMap/Multiplayer_railway.dreamcraft.com.cn/null/mw$default/.lock",
+      "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    },
+    {
+      "path": "XaeroWorldMap/Multiplayer_railway.dreamcraft.com.cn/null/mw$default/0_-1.zip",
+      "hash": "efef639a9f81ea10e78be4302a92a813c169ccef"
+    },
+    {
+      "path": "XaeroWorldMap/Multiplayer_railway.dreamcraft.com.cn/null/mw$default/0_0.zip",
+      "hash": "f987d442f2a8549ca045c26a7d8e6d620bd50a13"
+    },
+    {
+      "path": "XaeroWorldMap/Multiplayer_railway.dreamcraft.com.cn/server_config.txt",
+      "hash": "e3ca82fc333e741c3b4cbe952d4c4fe4ecd7e12b"
+    },
+    {
+      "path": "轨道交通Iris版-natives/glfw.dll",
+      "hash": "9d95a8f52cbd48ab87937714eb4fd2129ed10f0a"
+    },
+    {
+      "path": "轨道交通Iris版-natives/glfw32.dll",
+      "hash": "b9a18c65931b474a453cca5b20903220975f0fc9"
+    },
+    {
+      "path": "轨道交通Iris版-natives/jemalloc.dll",
+      "hash": "8a6eb00b934da6c97b0dc9d2dc321843076c8987"
+    },
+    {
+      "path": "轨道交通Iris版-natives/jemalloc32.dll",
+      "hash": "0d3c5c4d18d9a60501bce1f586684cd2fc5c466f"
+    },
+    {
+      "path": "轨道交通Iris版-natives/lwjgl.dll",
+      "hash": "d01410449d2402a952e9a6063699f1868196883f"
+    },
+    {
+      "path": "轨道交通Iris版-natives/lwjgl32.dll",
+      "hash": "a7aa4fbaa375fd39c4cb8eabeef45b44d5848bcb"
+    },
+    {
+      "path": "轨道交通Iris版-natives/lwjgl_opengl.dll",
+      "hash": "8e9836dd0d1691356db654aa02533ad80e9bf52c"
+    },
+    {
+      "path": "轨道交通Iris版-natives/lwjgl_opengl32.dll",
+      "hash": "2e0fe073b23ab972af00025097efcfcb446d927f"
+    },
+    {
+      "path": "轨道交通Iris版-natives/lwjgl_stb.dll",
+      "hash": "8b047fb3f6c31946fe33157e7912ac31595cd3b8"
+    },
+    {
+      "path": "轨道交通Iris版-natives/lwjgl_stb32.dll",
+      "hash": "1c28819763f77cbb4593a95b1cbb0999f136695d"
+    },
+    {
+      "path": "轨道交通Iris版-natives/lwjgl_tinyfd.dll",
+      "hash": "ec0fd8007afba6697d5b3b8249b5be27096a0ce8"
+    },
+    {
+      "path": "轨道交通Iris版-natives/lwjgl_tinyfd32.dll",
+      "hash": "079540a19727772f056cd80535e9645a674190b4"
+    },
+    {
+      "path": "轨道交通Iris版-natives/OpenAL.dll",
+      "hash": "dc8f7a5704164fe3dff3631c326bab7159a9358d"
+    },
+    {
+      "path": "轨道交通Iris版-natives/OpenAL32.dll",
+      "hash": "aa3fa9446b7c1264e2b463bb53946718e4f8ce82"
+    },
+    {
+      "path": "轨道交通Iris版-natives/SAPIWrapper_x64.dll",
+      "hash": "c4a293116e7531d950db2d5ea737e61a9912b61d"
+    },
+    {
+      "path": "轨道交通Iris版-natives/SAPIWrapper_x86.dll",
+      "hash": "70e85ab3f880a7c3d5f0a9aae0f65661cb8af5a6"
     }
   ],
   "addons": [
