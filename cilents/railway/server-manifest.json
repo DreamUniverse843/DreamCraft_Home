@@ -1,8 +1,8 @@
 {
-  "name": "DreamCraft Railway-Fabric 1.1.2",
+  "name": "DreamCraft Railway-Fabric",
   "author": "xiaoyuzhimeng@foxmail.com",
-  "version": "1.1.2",
-  "description": "ver:1.1.2\nRelease Date:2022-02-12\n- 资源包全量更新，预配了 1 号线/S1 线的发车铃音频\n- [重要]主驱动 Minecraft-Transit-Railway 更新至 beta-9-unofficial-4\n本次 MTR 的主要更新内容：\n- 伦敦地铁 D78 列车（D 区线列车）\n- 伦敦地铁 1996 列车 和 SP1900 火车的轻轨 3/4/5 电机声的改进\n- 列车渲染距离选项已可调，您现在可以调整火车渲染距离与 Minecraft 渲染距离的比例\n- 全版本 Optifine 兼容性改进\n- 使用光影时列车的阴影正常化\n- 渡轮标志\n- 修复了船厂内过长的侧线导致的崩溃\n- 修复了删除轨道时的并发修改异常\n- 改进了动态内存使用\n- 服务端性能的改进\n- 实时路况地图性能改进\n- 修复了乘坐火车的错误和玩家异常高速移动的问题\n- 修复了火车偶尔会在车站消失的问题\n- 加入了 Vivecraft 支持，现在可以在支持 VR 的设备上游玩 Minecraft Transit Railway。",
+  "version": "1.1.3",
+  "description": "ver:1.1.3\nRelease Date:2022-02-14\n- 新增导视牌美化模组 joestu-client-mod。",
   "fileApi": "https://www.dreamcraft.com.cn/cilents/railway",
   "files": [
     {
@@ -16,6 +16,10 @@
     {
       "path": "mods/fabric-api-0.46.1+1.18.jar",
       "hash": "9fbd31c83bde00d574e5def7b262beb4b2eb507b"
+    },
+    {
+      "path": "mods/joestu-client-mod-fabric-1.18-1.0.6.jar",
+      "hash": "1cd2f1cba317b47213787b6fddb52f27dfad318c"
     },
     {
       "path": "mods/MTR-fabric-1.18-3.0.0-beta-9-unofficial-4.jar",
@@ -291,7 +295,7 @@
     },
     {
       "path": "Release Notes.txt",
-      "hash": "3455d4d4b5ad8dbb6c796d363c22a5f140ffbd98"
+      "hash": "756abb62a7554e1f2ec62be7cddabb281c778151"
     },
     {
       "path": "resourcepacks/railway-sounds.zip",
@@ -312,14 +316,6 @@
     {
       "path": "resourcepacks/思源黑体.zip",
       "hash": "d6bfd7ba40358ad7d052ef339fb28107fa24bd50"
-    },
-    {
-      "path": "shaderpacks/[光影][汉化]ComplementaryShaders_v4.3.3.zip",
-      "hash": "8a0933e3f742ef02157a83ffb864aca17b3d0ab7"
-    },
-    {
-      "path": "shaderpacks/超低配光影水反.zip",
-      "hash": "0be861ce9383533519fc6f8a54f1ad6bc2610357"
     }
   ],
   "addons": [
