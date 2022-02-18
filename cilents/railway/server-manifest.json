@@ -1,14 +1,10 @@
 {
-  "name": "DreamCraft Railway-Fabric",
+  "name": "DreamCraft-Railway",
   "author": "xiaoyuzhimeng@foxmail.com",
-  "version": "1.1.3",
-  "description": "ver:1.1.3\nRelease Date:2022-02-14\n- 新增导视牌美化模组 joestu-client-mod。",
+  "version": "1.1.4",
+  "description": "",
   "fileApi": "https://www.dreamcraft.com.cn/cilents/railway",
   "files": [
-    {
-      "path": "authlib-injector.jar",
-      "hash": "5e8cda9cb85e3227f60829db1e595d186543ae40"
-    },
     {
       "path": "mods/ChiselsBits-fabric-1.18.1-1.2.77.jar",
       "hash": "abbccbc4f36d89782754ee7f69fb4c490058d9f4"
@@ -22,8 +18,8 @@
       "hash": "1cd2f1cba317b47213787b6fddb52f27dfad318c"
     },
     {
-      "path": "mods/MTR-fabric-1.18-3.0.0-beta-9-unofficial-4.jar",
-      "hash": "7243d31007fa7c6d2c26ea2cbfbc0b0626f667c7"
+      "path": "mods/MTR-fabric-1.18-3.0.0-beta-9-unofficial-4-hotfix-1.jar",
+      "hash": "bd378f30d4576928293ae8f3aaeb4b0ade8cbded"
     },
     {
       "path": "mods/test.txt",
@@ -295,7 +291,7 @@
     },
     {
       "path": "Release Notes.txt",
-      "hash": "756abb62a7554e1f2ec62be7cddabb281c778151"
+      "hash": "c339231e4504bc91d415332232baada05feee626"
     },
     {
       "path": "resourcepacks/railway-sounds.zip",
