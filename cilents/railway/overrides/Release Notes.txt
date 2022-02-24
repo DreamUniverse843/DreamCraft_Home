@@ -1,5 +1,8 @@
 DreamCraft Railway Cilent Changelog
 Based on HMCL
+ver:1.1.5
+Release Date:2022-02-24
+-[重要]主驱动更新：更正了 TNT 爆炸导致的潜在性崩溃
 ========
 ver:1.1.4
 Release Date:2022-02-18
