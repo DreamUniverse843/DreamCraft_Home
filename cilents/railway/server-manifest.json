@@ -1,17 +1,13 @@
 {
   "name": "1.18.1",
   "author": "xiaoyuzhimeng@foxmail.com",
-  "version": "1.1.5",
-  "description": "",
+  "version": "1.1.6",
+  "description": "修正了游戏界面不定期卡顿的问题",
   "fileApi": "https://www.dreamcraft.com.cn/cilents/railway",
   "files": [
     {
       "path": "mods/ChiselsBits-fabric-1.18.1-1.2.77.jar",
       "hash": "abbccbc4f36d89782754ee7f69fb4c490058d9f4"
-    },
-    {
-      "path": "mods/fabric-1.18-3.0.0-beta-9-unofficial-4-hotfix-1_20220224.jar",
-      "hash": "04f15e13ec5685c8fbd686f2467aacf7ba5b5062"
     },
     {
       "path": "mods/fabric-api-0.46.1+1.18.jar",
@@ -20,6 +16,10 @@
     {
       "path": "mods/joestu-client-mod-fabric-1.18-1.0.6.jar",
       "hash": "1cd2f1cba317b47213787b6fddb52f27dfad318c"
+    },
+    {
+      "path": "mods/MTR-fabric-1.18-3.0.0-beta-9-unofficial-7.jar",
+      "hash": "5dec4087ae37c902ef1c599b093adee06217779f"
     },
     {
       "path": "mods/test.txt",
@@ -34,39 +34,39 @@
       "hash": "db76cb84fe9abe9301e29a49457c030d6e54d948"
     },
     {
-      "path": "mods/[优化][实体方块优化]enhancedblockentities-0.5+1.18.jar",
+      "path": "mods/[优化][实体方块优化]enhancedblockentities-0.5+1.18.jar.disabled",
       "hash": "c7111f560caf965c18a13edcfbe789a87cf904f4"
     },
     {
-      "path": "mods/[优化][实体渲染优化]EntityCulling-Fabric-1.3.3.jar",
+      "path": "mods/[优化][实体渲染优化]EntityCulling-Fabric-1.3.3.jar.disabled",
       "hash": "17e958986004107f980fe17fbe902abffb662a1a"
     },
     {
-      "path": "mods/[优化][星光区块加载优化]starlight-1.0.0+fabric.d0a3220.jar",
+      "path": "mods/[优化][星光区块加载优化]starlight-1.0.0+fabric.d0a3220.jar.disabled",
       "hash": "743b14918588186cae2117d1a9684b400939e6f8"
     },
     {
-      "path": "mods/[优化][游戏加载速度优化]lazydfu-0.1.2.jar",
+      "path": "mods/[优化][游戏加载速度优化]lazydfu-0.1.2.jar.disabled",
       "hash": "2efec5781f1271bdcdae462eee402ccb97bff6fe"
     },
     {
-      "path": "mods/[优化][钠]sodium-fabric-mc1.18.1-0.4.0-alpha6+build.14.jar",
+      "path": "mods/[优化][钠]sodium-fabric-mc1.18.1-0.4.0-alpha6+build.14.jar.disabled",
       "hash": "795d4c12bffdb1b21eed5ff87c07ce5ca3c0dcbf"
     },
     {
-      "path": "mods/[优化][铁氧体磁芯(内存优化)]ferritecore-4.0.0-fabric.jar",
+      "path": "mods/[优化][铁氧体磁芯(内存优化)]ferritecore-4.0.0-fabric.jar.disabled",
       "hash": "e29e1f3991ea94a161eebd9faf68f9d489d588f3"
     },
     {
-      "path": "mods/[优化][锂]lithium-fabric-mc1.18.1-0.7.7.jar",
+      "path": "mods/[优化][锂]lithium-fabric-mc1.18.1-0.7.7.jar.disabled",
       "hash": "8eaffcb994e67ac7b3fd2efa526f7721f8327d11"
     },
     {
-      "path": "mods/[修复][物品模型修复]item-model-fix-1.0.3+1.18.jar",
+      "path": "mods/[修复][物品模型修复]item-model-fix-1.0.3+1.18.jar.disabled",
       "hash": "2aa679f2dc887e2ce45d55fffe67af36250b4841"
     },
     {
-      "path": "mods/[修复][聊天卡顿修复]chatlagfix-1.0.0.jar",
+      "path": "mods/[修复][聊天卡顿修复]chatlagfix-1.0.0.jar.disabled",
       "hash": "675497138d58c3fe0f53aaddd17a8dce98ecbc36"
     },
     {
@@ -86,7 +86,7 @@
       "hash": "b49e4fc3497cb80c632b294fdcb455605ed79b58"
     },
     {
-      "path": "mods/[前置][Fabric Rendering API支持]indium-1.0.2-alpha2+mc1.18.1.jar",
+      "path": "mods/[前置][Fabric Rendering API支持]indium-1.0.2-alpha2+mc1.18.1.jar.disabled",
       "hash": "111912f57b1edd769b19c24419390db0652fd0c6"
     },
     {
@@ -102,15 +102,15 @@
       "hash": "e92a480c4cfdce43e2354802c80468055b6ff6f5"
     },
     {
-      "path": "mods/[功能][Optifine格式动态材质支持]animatica-0.3+1.18.jar",
+      "path": "mods/[功能][Optifine格式动态材质支持]animatica-0.3+1.18.jar.disabled",
       "hash": "6b384abe9836f17b6287c2bd22fb85189f9101eb"
     },
     {
-      "path": "mods/[功能][Optifine格式连接材质支持]continuity-1.0.3+1.18.jar",
+      "path": "mods/[功能][Optifine格式连接材质支持]continuity-1.0.3+1.18.jar.disabled",
       "hash": "40942242ea1eb748c0adb1369bc9a5cb103be2b0"
     },
     {
-      "path": "mods/[功能][Optifine赞助披风支持]fabric-optifine-capes-2.0.0.jar",
+      "path": "mods/[功能][Optifine赞助披风支持]fabric-optifine-capes-2.0.0.jar.disabled",
       "hash": "50061bc537061b33f8ec782335ff325f31d502b5"
     },
     {
@@ -150,7 +150,7 @@
       "hash": "030c9f2041005fc3bbe83244dd4cab12c8ef97dd"
     },
     {
-      "path": "mods/[功能][更好的局域网世界]mcwifipnp-1.5.3-1.18-fabric.jar",
+      "path": "mods/[功能][更好的局域网世界]mcwifipnp-1.5.3-1.18-fabric.jar.disabled",
       "hash": "c6edeee637f8108e9768bbed7a9af280e00a6962"
     },
     {
@@ -158,7 +158,7 @@
       "hash": "d3e8dddfa088179199d1b349243cb4308735d40e"
     },
     {
-      "path": "mods/[功能][更好的钠视频设置按钮]bsvsb-2.0.5.jar",
+      "path": "mods/[功能][更好的钠视频设置按钮]bsvsb-2.0.5.jar.disabled",
       "hash": "4399dd83c2a1d1cca8169d31fcebe8fdb30685bd"
     },
     {
@@ -170,7 +170,7 @@
       "hash": "99291fc92de714ff466526bf5679bf781480d2b0"
     },
     {
-      "path": "mods/[功能][自动第三人称视角]auto_third_person-1.18-1.1.0.jar",
+      "path": "mods/[功能][自动第三人称视角]auto_third_person-1.18-1.1.0.jar.disabled",
       "hash": "ffff9461d25b243368758674d00674b793c5950b"
     },
     {
@@ -178,11 +178,11 @@
       "hash": "05471f030ea9f4920cb4cd95e3353c209dbc745b"
     },
     {
-      "path": "mods/[功能][鼠标滚轮]mousewheelie-1.8.0+mc1.18-pre5.jar",
+      "path": "mods/[功能][鼠标滚轮]mousewheelie-1.8.0+mc1.18-pre5.jar.disabled",
       "hash": "a6bfc954e33a23ead3b92de3adcc45598ebceb09"
     },
     {
-      "path": "mods/[拓展][钠 · 扩展]sodium-extra-mc1.18.1-0.3.8.jar",
+      "path": "mods/[拓展][钠 · 扩展]sodium-extra-mc1.18.1-0.3.8.jar.disabled",
       "hash": "0702cc8dc73eff1613ca37ece81d1124bc39cdf6"
     },
     {
@@ -202,7 +202,7 @@
       "hash": "dc48a1b617ea555013aec9f4ceb02b84c68994fe"
     },
     {
-      "path": "mods/[显示][动态光源]lambdynamiclights-2.1.0+1.17.jar",
+      "path": "mods/[显示][动态光源]lambdynamiclights-2.1.0+1.17.jar.disabled",
       "hash": "812fdc41518b786f05d72de4017c16c88a3e2ea6"
     },
     {
@@ -230,7 +230,7 @@
       "hash": "85d461a479e0b87e91d5e269444ccc405507b345"
     },
     {
-      "path": "mods/[显示][苹果皮]appleskin-fabric-mc1.18-2.2.0.jar",
+      "path": "mods/[显示][苹果皮]appleskin-fabric-mc1.18-2.2.0.jar.disabled",
       "hash": "2f5c7b7bc8748e8303edf74cd4168ab949ddd3f6"
     },
     {
@@ -254,7 +254,7 @@
       "hash": "d51395ab0a4b9fda83e2d25507693f6e82077d4f"
     },
     {
-      "path": "mods/[美化][Iris Shader光影加载器]iris-mc1.18.1-1.2.0-pre.jar",
+      "path": "mods/[美化][Iris Shader光影加载器]iris-mc1.18.1-1.2.0-pre.jar.disabled",
       "hash": "46929a33ac1811bd4b919604e262234161243f82"
     },
     {
@@ -262,11 +262,11 @@
       "hash": "792d7412c35399c512771435a3ed22f89d198fbc"
     },
     {
-      "path": "mods/[美化][更多动作]notenoughanimations-fabric-1.4.0-mc1.18-pre1.jar",
+      "path": "mods/[美化][更多动作]notenoughanimations-fabric-1.4.0-mc1.18-pre1.jar.disabled",
       "hash": "2603a34d3df8ca6578abc95250f03e2512a0972d"
     },
     {
-      "path": "mods/[美化][更好的3d皮肤]3dSkinLayers-Fabric-1.3.1.jar",
+      "path": "mods/[美化][更好的3d皮肤]3dSkinLayers-Fabric-1.3.1.jar.disabled",
       "hash": "eddc590602e016b974ee8e5ac2837349a2d95043"
     },
     {
@@ -291,7 +291,7 @@
     },
     {
       "path": "Release Notes.txt",
-      "hash": "e6cd9828bf8065e1b139f4ee146ee3f401be87d9"
+      "hash": "b02c8653bee1052857864776a2b0cb4f3bf41823"
     },
     {
       "path": "resourcepacks/railway-sounds.zip",

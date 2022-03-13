@@ -1,5 +1,10 @@
 DreamCraft Railway Cilent Changelog
 Based on HMCL
+ver:1.1.6
+Release Date:2022-03-13
+-[重要]主驱动更新：MTR 更新至 beta-9-unofficial-7
+-[重要]修正了优化模组的冲突导致的画面卡顿问题
+========
 ver:1.1.5
 Release Date:2022-02-24
 -[重要]主驱动更新：更正了 TNT 爆炸导致的潜在性崩溃
