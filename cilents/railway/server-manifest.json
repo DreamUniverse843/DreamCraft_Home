@@ -1,8 +1,8 @@
 {
   "name": "1.18.1",
   "author": "xiaoyuzhimeng@foxmail.com",
-  "version": "1.1.6",
-  "description": "修正了游戏界面不定期卡顿的问题",
+  "version": "1.1.7",
+  "description": "",
   "fileApi": "https://www.dreamcraft.com.cn/cilents/railway",
   "files": [
     {
@@ -30,220 +30,32 @@
       "hash": "9ff5e07f9738822971e5362fdf76e76e239b3a2a"
     },
     {
-      "path": "mods/[优化][动态FPS]dynamic-fps-2.0.6.jar",
-      "hash": "db76cb84fe9abe9301e29a49457c030d6e54d948"
-    },
-    {
-      "path": "mods/[优化][实体方块优化]enhancedblockentities-0.5+1.18.jar.disabled",
-      "hash": "c7111f560caf965c18a13edcfbe789a87cf904f4"
-    },
-    {
-      "path": "mods/[优化][实体渲染优化]EntityCulling-Fabric-1.3.3.jar.disabled",
-      "hash": "17e958986004107f980fe17fbe902abffb662a1a"
-    },
-    {
-      "path": "mods/[优化][星光区块加载优化]starlight-1.0.0+fabric.d0a3220.jar.disabled",
-      "hash": "743b14918588186cae2117d1a9684b400939e6f8"
-    },
-    {
-      "path": "mods/[优化][游戏加载速度优化]lazydfu-0.1.2.jar.disabled",
-      "hash": "2efec5781f1271bdcdae462eee402ccb97bff6fe"
-    },
-    {
-      "path": "mods/[优化][钠]sodium-fabric-mc1.18.1-0.4.0-alpha6+build.14.jar.disabled",
-      "hash": "795d4c12bffdb1b21eed5ff87c07ce5ca3c0dcbf"
-    },
-    {
-      "path": "mods/[优化][铁氧体磁芯(内存优化)]ferritecore-4.0.0-fabric.jar.disabled",
-      "hash": "e29e1f3991ea94a161eebd9faf68f9d489d588f3"
-    },
-    {
-      "path": "mods/[优化][锂]lithium-fabric-mc1.18.1-0.7.7.jar.disabled",
-      "hash": "8eaffcb994e67ac7b3fd2efa526f7721f8327d11"
-    },
-    {
-      "path": "mods/[修复][物品模型修复]item-model-fix-1.0.3+1.18.jar.disabled",
-      "hash": "2aa679f2dc887e2ce45d55fffe67af36250b4841"
-    },
-    {
-      "path": "mods/[修复][聊天卡顿修复]chatlagfix-1.0.0.jar.disabled",
-      "hash": "675497138d58c3fe0f53aaddd17a8dce98ecbc36"
-    },
-    {
       "path": "mods/[创世神] worldedit-mod-7.2.8.jar",
       "hash": "6f82fb0943421681023c5b3d3afdd87ebb4a2034"
-    },
-    {
-      "path": "mods/[前置][Architectury API]architectury-3.0.39.jar",
-      "hash": "f199a426d13149635bb3788154fcbf83dd628b69"
-    },
-    {
-      "path": "mods/[前置][Cloth API]cloth-api-2.0.54.jar",
-      "hash": "f537a052c8e4351ec391e8126d106248a1f9336b"
-    },
-    {
-      "path": "mods/[前置][cloth config]cloth-config-6.0.42-fabric.jar",
-      "hash": "b49e4fc3497cb80c632b294fdcb455605ed79b58"
-    },
-    {
-      "path": "mods/[前置][Fabric Rendering API支持]indium-1.0.2-alpha2+mc1.18.1.jar.disabled",
-      "hash": "111912f57b1edd769b19c24419390db0652fd0c6"
     },
     {
       "path": "mods/[前置][masa前置]malilib-fabric-1.18.0-0.10.0-dev.26.jar",
       "hash": "dddd708c76ed5bcb79a8147cd7b0a46fa8091ab0"
     },
     {
-      "path": "mods/[前置][配置前置]completeconfig-lib-1.3.3.jar",
-      "hash": "bdf33e87d89872fd0c2b6992cd467c6777e75e42"
-    },
-    {
-      "path": "mods/[功能][C键缩放]WI-Zoom-1.3-MC1.18.jar",
-      "hash": "e92a480c4cfdce43e2354802c80468055b6ff6f5"
-    },
-    {
-      "path": "mods/[功能][Optifine格式动态材质支持]animatica-0.3+1.18.jar.disabled",
-      "hash": "6b384abe9836f17b6287c2bd22fb85189f9101eb"
-    },
-    {
-      "path": "mods/[功能][Optifine格式连接材质支持]continuity-1.0.3+1.18.jar.disabled",
-      "hash": "40942242ea1eb748c0adb1369bc9a5cb103be2b0"
-    },
-    {
-      "path": "mods/[功能][Optifine赞助披风支持]fabric-optifine-capes-2.0.0.jar.disabled",
-      "hash": "50061bc537061b33f8ec782335ff325f31d502b5"
-    },
-    {
-      "path": "mods/[功能][REI物品管理器]RoughlyEnoughItems-fabric-7.0.339.jar",
-      "hash": "a4276d7b615c00d4d01d7028c6998ca09b5a0405"
-    },
-    {
-      "path": "mods/[功能][R键整理]InventoryProfilesNext-fabric-1.18-1.1.8.jar",
-      "hash": "552a8b3e7a81eb566f8b5639ba37adcff66ab5e6"
-    },
-    {
       "path": "mods/[功能][Xaero的世界地图]XaerosWorldMap_1.20.0_Fabric_1.18.jar",
       "hash": "9a0867e0f4d3f0dbe35a8ad5a09e3f6f74723b17"
-    },
-    {
-      "path": "mods/[功能][万用皮肤补丁]CustomSkinLoader_Fabric-14.13-SNAPSHOT-313.jar",
-      "hash": "aecd16f0509e0789417ed82ae1e4e87bd1da4ba5"
-    },
-    {
-      "path": "mods/[功能][地毯]fabric-carpet-1.18-1.4.56+v211130.jar",
-      "hash": "2c3ace8fa693441feacb63bad69ca3a38ee1587c"
-    },
-    {
-      "path": "mods/[功能][客户端修改]TweakMyClient-fabric-mc1.18-Snapshot-1.1.11+bba69f9.jar",
-      "hash": "4d0f19d1793fa5f22565dede532fa7ad7c4fd5dd"
-    },
-    {
-      "path": "mods/[功能][快捷键设置优化]Controlling-fabric-1.18.1-9.0.8.jar",
-      "hash": "64104790065709a957d4343e8092ddd5dd596039"
-    },
-    {
-      "path": "mods/[功能][投影]litematica-fabric-1.18.0-0.9.0.jar",
-      "hash": "5fba30338e276b5794ef780ad111c3c836d03234"
-    },
-    {
-      "path": "mods/[功能][操作改变]tweakeroo-fabric-1.18.0-0.11.0.jar",
-      "hash": "030c9f2041005fc3bbe83244dd4cab12c8ef97dd"
-    },
-    {
-      "path": "mods/[功能][更好的局域网世界]mcwifipnp-1.5.3-1.18-fabric.jar.disabled",
-      "hash": "c6edeee637f8108e9768bbed7a9af280e00a6962"
-    },
-    {
-      "path": "mods/[功能][更好的村民交易]easiervillagertrading-1.18-fabric0.43.1-1.5.4.jar",
-      "hash": "d3e8dddfa088179199d1b349243cb4308735d40e"
-    },
-    {
-      "path": "mods/[功能][更好的钠视频设置按钮]bsvsb-2.0.5.jar.disabled",
-      "hash": "4399dd83c2a1d1cca8169d31fcebe8fdb30685bd"
-    },
-    {
-      "path": "mods/[功能][游戏内账号切换]InGameAccountSwitcher-Fabric-1.18-7.1.3.jar",
-      "hash": "2e2a348a6f787a52d7dfa587f13e8392690ec77c"
     },
     {
       "path": "mods/[功能][聊天栏防遮挡]chat-up-2.0.0.jar",
       "hash": "99291fc92de714ff466526bf5679bf781480d2b0"
     },
     {
-      "path": "mods/[功能][自动第三人称视角]auto_third_person-1.18-1.1.0.jar.disabled",
-      "hash": "ffff9461d25b243368758674d00674b793c5950b"
-    },
-    {
-      "path": "mods/[功能][输入法冲突修复]imblockerfabric-1.0.17.jar",
-      "hash": "05471f030ea9f4920cb4cd95e3353c209dbc745b"
-    },
-    {
-      "path": "mods/[功能][鼠标滚轮]mousewheelie-1.8.0+mc1.18-pre5.jar.disabled",
-      "hash": "a6bfc954e33a23ead3b92de3adcc45598ebceb09"
-    },
-    {
-      "path": "mods/[拓展][钠 · 扩展]sodium-extra-mc1.18.1-0.3.8.jar.disabled",
-      "hash": "0702cc8dc73eff1613ca37ece81d1124bc39cdf6"
-    },
-    {
       "path": "mods/[显示][mod菜单]modmenu-3.0.0.jar",
       "hash": "ef5e17e394d0031b35b0b185b7c3d9eee295ecaf"
-    },
-    {
-      "path": "mods/[显示][内存占用显示]MemoryUsageScreen-1.17-1.2.jar",
-      "hash": "6381e8e65d171fb7e9653ce463a49d48a2d30129"
-    },
-    {
-      "path": "mods/[显示][准星物品显示]wthit-fabric-4.2.0.jar",
-      "hash": "1f5e61f9142e69be88510e169229e777afbeec3d"
-    },
-    {
-      "path": "mods/[显示][划船地图显示]Boat-Item-View-Fabric-1.18-0.0.3.jar",
-      "hash": "dc48a1b617ea555013aec9f4ceb02b84c68994fe"
-    },
-    {
-      "path": "mods/[显示][动态光源]lambdynamiclights-2.1.0+1.17.jar.disabled",
-      "hash": "812fdc41518b786f05d72de4017c16c88a3e2ea6"
-    },
-    {
-      "path": "mods/[显示][微小的GUI调整]slight-gui-modifications-2.0.2.jar",
-      "hash": "1e0167bec3b952eaf8dd8b6578c15cf852f6c999"
     },
     {
       "path": "mods/[显示][更好的攻击指示器]enhanced_attack_indicator-1.0.2+1.18.jar",
       "hash": "58db14fbeeeb7d9fe30172e70df6b800fdc3224c"
     },
     {
-      "path": "mods/[显示][潜影盒工具提示]shulkerboxtooltip-3.0.5+1.18.jar",
-      "hash": "8d182b6db8e2fe15891353bbc650b4cc665c3422"
-    },
-    {
-      "path": "mods/[显示][物品耐久显示]durabilityviewer-1.18-fabric0.43.1-1.10.2.jar",
-      "hash": "65d508c8a979c4ad047aee1a2b33ca716057a42e"
-    },
-    {
-      "path": "mods/[显示][盔甲条颜色显示]armorchroma-1.1.0.jar",
-      "hash": "37661213b1575cc62d73bb2b2d3649766bb0914c"
-    },
-    {
       "path": "mods/[显示][聊天头像显示]chat_heads-0.5.1-fabric-1.18.jar",
       "hash": "85d461a479e0b87e91d5e269444ccc405507b345"
-    },
-    {
-      "path": "mods/[显示][苹果皮]appleskin-fabric-mc1.18-2.2.0.jar.disabled",
-      "hash": "2f5c7b7bc8748e8303edf74cd4168ab949ddd3f6"
-    },
-    {
-      "path": "mods/[显示][血量显示]orderly-2.0.1-alpha.2+custom-1.18.jar",
-      "hash": "8ab9289211c0af7477e9ebf77e601e2739d82d70"
-    },
-    {
-      "path": "mods/[显示][过长tooltip换行显示]tooltipfix-1.0.4-1.18.jar",
-      "hash": "16b844c45ce0e4f1159ff51739479e8747a64d84"
-    },
-    {
-      "path": "mods/[显示][进度信息]advancementinfo-1.18-fabric0.43.1-1.3.jar",
-      "hash": "2ff0ac3fc5f6a2e274741cfa4f55eea8044161bd"
     },
     {
       "path": "mods/[显示][迷你F3]minihud-fabric-1.18.0-0.19.0-dev.20211204.230657.jar",
@@ -254,64 +66,228 @@
       "hash": "d51395ab0a4b9fda83e2d25507693f6e82077d4f"
     },
     {
-      "path": "mods/[美化][Iris Shader光影加载器]iris-mc1.18.1-1.2.0-pre.jar.disabled",
-      "hash": "46929a33ac1811bd4b919604e262234161243f82"
-    },
-    {
-      "path": "mods/[美化][Tab页面玩家大头照美化]hatlist-1.2.jar",
-      "hash": "792d7412c35399c512771435a3ed22f89d198fbc"
-    },
-    {
-      "path": "mods/[美化][更多动作]notenoughanimations-fabric-1.4.0-mc1.18-pre1.jar.disabled",
-      "hash": "2603a34d3df8ca6578abc95250f03e2512a0972d"
-    },
-    {
-      "path": "mods/[美化][更好的3d皮肤]3dSkinLayers-Fabric-1.3.1.jar.disabled",
-      "hash": "eddc590602e016b974ee8e5ac2837349a2d95043"
-    },
-    {
-      "path": "mods/[附属][Carpet客户端侧增强]essential-client-1.18.1-1.1.2.jar",
-      "hash": "02c7f7db9db6c61d31242d257415b3e0b98726fd"
-    },
-    {
-      "path": "mods/[附属][Carpet拓展]carpet-extra-1.18-1.4.56.jar",
-      "hash": "57f63f089436502ac3ae132c4abc475b41bbb2a0"
-    },
-    {
-      "path": "mods/[附属][masa工具]MasaGadget-fabric-1.18-rc3-2.0.7-alpha.114514.jar",
-      "hash": "d663f2b7beeb8f4fb854d40843ab519d3a1f869c"
-    },
-    {
-      "path": "mods/[附属][我能挖这个方块吗]can-i-mine-this-block-1.1.0.jar",
-      "hash": "611dc2c58e1ca5419355e72e6ca7e33b2ac6b381"
-    },
-    {
       "path": "mods/[附属][迷你F3汉化]MiniHUD-Injector-fabric-mc1.16-1.2.0+916ad27.jar",
       "hash": "946368bf1d324fffe207db21d0f90dfe8c3800b7"
     },
     {
-      "path": "Release Notes.txt",
-      "hash": "b02c8653bee1052857864776a2b0cb4f3bf41823"
+      "path": "mods/选装件/[优化][动态FPS]dynamic-fps-2.0.6.jar.disabled",
+      "hash": "db76cb84fe9abe9301e29a49457c030d6e54d948"
     },
     {
-      "path": "resourcepacks/railway-sounds.zip",
-      "hash": "4e14f07394134a851a4e365864de7d1ccc29395f"
+      "path": "mods/选装件/[优化][实体方块优化]enhancedblockentities-0.5+1.18.jar.disabled",
+      "hash": "c7111f560caf965c18a13edcfbe789a87cf904f4"
     },
     {
-      "path": "resourcepacks/XPlus ClassicOre by Bili@_Flare_ MCBBS@gfbdhd port by Wudji.zip",
-      "hash": "b3abef5d93be679688a2b7d78c81986226633138"
+      "path": "mods/选装件/[优化][实体渲染优化]EntityCulling-Fabric-1.3.3.jar.disabled",
+      "hash": "17e958986004107f980fe17fbe902abffb662a1a"
     },
     {
-      "path": "resourcepacks/XPlus 配套基础材质[masa汉化][反南瓜头GUI]v0.0.3.zip",
-      "hash": "ebcb02152ea47a0b7327a7cd24e51fd46f39a7d0"
+      "path": "mods/选装件/[优化][星光区块加载优化]starlight-1.0.0+fabric.d0a3220.jar.disabled",
+      "hash": "743b14918588186cae2117d1a9684b400939e6f8"
     },
     {
-      "path": "resourcepacks/小地图汉化by新兵sinbing@bilibili.txt",
-      "hash": "c7120450dd385658d669c3b2b8a0f78a780f8244"
+      "path": "mods/选装件/[优化][游戏加载速度优化]lazydfu-0.1.2.jar.disabled",
+      "hash": "2efec5781f1271bdcdae462eee402ccb97bff6fe"
     },
     {
-      "path": "resourcepacks/思源黑体.zip",
-      "hash": "d6bfd7ba40358ad7d052ef339fb28107fa24bd50"
+      "path": "mods/选装件/[优化][钠]sodium-fabric-mc1.18.1-0.4.0-alpha6+build.14.jar.disabled",
+      "hash": "795d4c12bffdb1b21eed5ff87c07ce5ca3c0dcbf"
+    },
+    {
+      "path": "mods/选装件/[优化][铁氧体磁芯(内存优化)]ferritecore-4.0.0-fabric.jar.disabled",
+      "hash": "e29e1f3991ea94a161eebd9faf68f9d489d588f3"
+    },
+    {
+      "path": "mods/选装件/[优化][锂]lithium-fabric-mc1.18.1-0.7.7.jar.disabled",
+      "hash": "8eaffcb994e67ac7b3fd2efa526f7721f8327d11"
+    },
+    {
+      "path": "mods/选装件/[修复][物品模型修复]item-model-fix-1.0.3+1.18.jar.disabled",
+      "hash": "2aa679f2dc887e2ce45d55fffe67af36250b4841"
+    },
+    {
+      "path": "mods/选装件/[修复][聊天卡顿修复]chatlagfix-1.0.0.jar.disabled",
+      "hash": "675497138d58c3fe0f53aaddd17a8dce98ecbc36"
+    },
+    {
+      "path": "mods/选装件/[前置][Architectury API]architectury-3.0.39.jar.disabled",
+      "hash": "f199a426d13149635bb3788154fcbf83dd628b69"
+    },
+    {
+      "path": "mods/选装件/[前置][Cloth API]cloth-api-2.0.54.jar.disabled",
+      "hash": "f537a052c8e4351ec391e8126d106248a1f9336b"
+    },
+    {
+      "path": "mods/选装件/[前置][cloth config]cloth-config-6.0.42-fabric.jar.disabled",
+      "hash": "b49e4fc3497cb80c632b294fdcb455605ed79b58"
+    },
+    {
+      "path": "mods/选装件/[前置][Fabric Rendering API支持]indium-1.0.2-alpha2+mc1.18.1.jar.disabled",
+      "hash": "111912f57b1edd769b19c24419390db0652fd0c6"
+    },
+    {
+      "path": "mods/选装件/[前置][配置前置]completeconfig-lib-1.3.3.jar.disabled",
+      "hash": "bdf33e87d89872fd0c2b6992cd467c6777e75e42"
+    },
+    {
+      "path": "mods/选装件/[功能][C键缩放]WI-Zoom-1.3-MC1.18.jar.disabled",
+      "hash": "e92a480c4cfdce43e2354802c80468055b6ff6f5"
+    },
+    {
+      "path": "mods/选装件/[功能][Optifine格式动态材质支持]animatica-0.3+1.18.jar.disabled",
+      "hash": "6b384abe9836f17b6287c2bd22fb85189f9101eb"
+    },
+    {
+      "path": "mods/选装件/[功能][Optifine格式连接材质支持]continuity-1.0.3+1.18.jar.disabled",
+      "hash": "40942242ea1eb748c0adb1369bc9a5cb103be2b0"
+    },
+    {
+      "path": "mods/选装件/[功能][Optifine赞助披风支持]fabric-optifine-capes-2.0.0.jar.disabled",
+      "hash": "50061bc537061b33f8ec782335ff325f31d502b5"
+    },
+    {
+      "path": "mods/选装件/[功能][REI物品管理器]RoughlyEnoughItems-fabric-7.0.339.jar.disabled",
+      "hash": "a4276d7b615c00d4d01d7028c6998ca09b5a0405"
+    },
+    {
+      "path": "mods/选装件/[功能][R键整理]InventoryProfilesNext-fabric-1.18-1.1.8.jar.disabled",
+      "hash": "552a8b3e7a81eb566f8b5639ba37adcff66ab5e6"
+    },
+    {
+      "path": "mods/选装件/[功能][万用皮肤补丁]CustomSkinLoader_Fabric-14.13-SNAPSHOT-313.jar.disabled",
+      "hash": "aecd16f0509e0789417ed82ae1e4e87bd1da4ba5"
+    },
+    {
+      "path": "mods/选装件/[功能][地毯]fabric-carpet-1.18-1.4.56+v211130.jar.disabled",
+      "hash": "2c3ace8fa693441feacb63bad69ca3a38ee1587c"
+    },
+    {
+      "path": "mods/选装件/[功能][客户端修改]TweakMyClient-fabric-mc1.18-Snapshot-1.1.11+bba69f9.jar.disabled",
+      "hash": "4d0f19d1793fa5f22565dede532fa7ad7c4fd5dd"
+    },
+    {
+      "path": "mods/选装件/[功能][快捷键设置优化]Controlling-fabric-1.18.1-9.0.8.jar.disabled",
+      "hash": "64104790065709a957d4343e8092ddd5dd596039"
+    },
+    {
+      "path": "mods/选装件/[功能][投影]litematica-fabric-1.18.0-0.9.0.jar.disabled",
+      "hash": "5fba30338e276b5794ef780ad111c3c836d03234"
+    },
+    {
+      "path": "mods/选装件/[功能][操作改变]tweakeroo-fabric-1.18.0-0.11.0.jar.disabled",
+      "hash": "030c9f2041005fc3bbe83244dd4cab12c8ef97dd"
+    },
+    {
+      "path": "mods/选装件/[功能][更好的局域网世界]mcwifipnp-1.5.3-1.18-fabric.jar.disabled",
+      "hash": "c6edeee637f8108e9768bbed7a9af280e00a6962"
+    },
+    {
+      "path": "mods/选装件/[功能][更好的村民交易]easiervillagertrading-1.18-fabric0.43.1-1.5.4.jar.disabled",
+      "hash": "d3e8dddfa088179199d1b349243cb4308735d40e"
+    },
+    {
+      "path": "mods/选装件/[功能][更好的钠视频设置按钮]bsvsb-2.0.5.jar.disabled",
+      "hash": "4399dd83c2a1d1cca8169d31fcebe8fdb30685bd"
+    },
+    {
+      "path": "mods/选装件/[功能][游戏内账号切换]InGameAccountSwitcher-Fabric-1.18-7.1.3.jar.disabled",
+      "hash": "2e2a348a6f787a52d7dfa587f13e8392690ec77c"
+    },
+    {
+      "path": "mods/选装件/[功能][自动第三人称视角]auto_third_person-1.18-1.1.0.jar.disabled",
+      "hash": "ffff9461d25b243368758674d00674b793c5950b"
+    },
+    {
+      "path": "mods/选装件/[功能][输入法冲突修复]imblockerfabric-1.0.17.jar.disabled",
+      "hash": "05471f030ea9f4920cb4cd95e3353c209dbc745b"
+    },
+    {
+      "path": "mods/选装件/[功能][鼠标滚轮]mousewheelie-1.8.0+mc1.18-pre5.jar.disabled",
+      "hash": "a6bfc954e33a23ead3b92de3adcc45598ebceb09"
+    },
+    {
+      "path": "mods/选装件/[拓展][钠 · 扩展]sodium-extra-mc1.18.1-0.3.8.jar.disabled",
+      "hash": "0702cc8dc73eff1613ca37ece81d1124bc39cdf6"
+    },
+    {
+      "path": "mods/选装件/[显示][内存占用显示]MemoryUsageScreen-1.17-1.2.jar.disabled",
+      "hash": "6381e8e65d171fb7e9653ce463a49d48a2d30129"
+    },
+    {
+      "path": "mods/选装件/[显示][准星物品显示]wthit-fabric-4.2.0.jar.disabled",
+      "hash": "1f5e61f9142e69be88510e169229e777afbeec3d"
+    },
+    {
+      "path": "mods/选装件/[显示][划船地图显示]Boat-Item-View-Fabric-1.18-0.0.3.jar.disabled",
+      "hash": "dc48a1b617ea555013aec9f4ceb02b84c68994fe"
+    },
+    {
+      "path": "mods/选装件/[显示][动态光源]lambdynamiclights-2.1.0+1.17.jar.disabled",
+      "hash": "812fdc41518b786f05d72de4017c16c88a3e2ea6"
+    },
+    {
+      "path": "mods/选装件/[显示][微小的GUI调整]slight-gui-modifications-2.0.2.jar.disabled",
+      "hash": "1e0167bec3b952eaf8dd8b6578c15cf852f6c999"
+    },
+    {
+      "path": "mods/选装件/[显示][潜影盒工具提示]shulkerboxtooltip-3.0.5+1.18.jar.disabled",
+      "hash": "8d182b6db8e2fe15891353bbc650b4cc665c3422"
+    },
+    {
+      "path": "mods/选装件/[显示][物品耐久显示]durabilityviewer-1.18-fabric0.43.1-1.10.2.jar.disabled",
+      "hash": "65d508c8a979c4ad047aee1a2b33ca716057a42e"
+    },
+    {
+      "path": "mods/选装件/[显示][盔甲条颜色显示]armorchroma-1.1.0.jar.disabled",
+      "hash": "37661213b1575cc62d73bb2b2d3649766bb0914c"
+    },
+    {
+      "path": "mods/选装件/[显示][苹果皮]appleskin-fabric-mc1.18-2.2.0.jar.disabled",
+      "hash": "2f5c7b7bc8748e8303edf74cd4168ab949ddd3f6"
+    },
+    {
+      "path": "mods/选装件/[显示][血量显示]orderly-2.0.1-alpha.2+custom-1.18.jar.disabled",
+      "hash": "8ab9289211c0af7477e9ebf77e601e2739d82d70"
+    },
+    {
+      "path": "mods/选装件/[显示][过长tooltip换行显示]tooltipfix-1.0.4-1.18.jar.disabled",
+      "hash": "16b844c45ce0e4f1159ff51739479e8747a64d84"
+    },
+    {
+      "path": "mods/选装件/[显示][进度信息]advancementinfo-1.18-fabric0.43.1-1.3.jar.disabled",
+      "hash": "2ff0ac3fc5f6a2e274741cfa4f55eea8044161bd"
+    },
+    {
+      "path": "mods/选装件/[美化][Iris Shader光影加载器]iris-mc1.18.1-1.2.0-pre.jar.disabled",
+      "hash": "46929a33ac1811bd4b919604e262234161243f82"
+    },
+    {
+      "path": "mods/选装件/[美化][Tab页面玩家大头照美化]hatlist-1.2.jar.disabled",
+      "hash": "792d7412c35399c512771435a3ed22f89d198fbc"
+    },
+    {
+      "path": "mods/选装件/[美化][更多动作]notenoughanimations-fabric-1.4.0-mc1.18-pre1.jar.disabled",
+      "hash": "2603a34d3df8ca6578abc95250f03e2512a0972d"
+    },
+    {
+      "path": "mods/选装件/[美化][更好的3d皮肤]3dSkinLayers-Fabric-1.3.1.jar.disabled",
+      "hash": "eddc590602e016b974ee8e5ac2837349a2d95043"
+    },
+    {
+      "path": "mods/选装件/[附属][Carpet客户端侧增强]essential-client-1.18.1-1.1.2.jar.disabled",
+      "hash": "02c7f7db9db6c61d31242d257415b3e0b98726fd"
+    },
+    {
+      "path": "mods/选装件/[附属][Carpet拓展]carpet-extra-1.18-1.4.56.jar.disabled",
+      "hash": "57f63f089436502ac3ae132c4abc475b41bbb2a0"
+    },
+    {
+      "path": "mods/选装件/[附属][masa工具]MasaGadget-fabric-1.18-rc3-2.0.7-alpha.114514.jar.disabled",
+      "hash": "d663f2b7beeb8f4fb854d40843ab519d3a1f869c"
+    },
+    {
+      "path": "mods/选装件/[附属][我能挖这个方块吗]can-i-mine-this-block-1.1.0.jar.disabled",
+      "hash": "611dc2c58e1ca5419355e72e6ca7e33b2ac6b381"
     }
   ],
   "addons": [
